@@ -1,8 +1,0 @@
-.js-random-block {
-    display: none;
-}
-
-.js-random-block:first-of-type {
-    display: block;
-    visibility: hidden;
-}
