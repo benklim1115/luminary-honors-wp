@@ -31,7 +31,8 @@ wp-content/themes/**
 !wp-content/plugins/everything-it-takes/**
 
 # Theme
-## Add themes here
+!wp-content/themes/luminary-honors/
+!wp-content/themes/luminary-honors/**
 
 # Stop editing!
 
