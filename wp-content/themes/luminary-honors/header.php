@@ -15,3 +15,4 @@
     </head>
     <body <?php body_class();?>>
 
+    <h2 style="text-align: center"> President's Luminary Honors </h2>
