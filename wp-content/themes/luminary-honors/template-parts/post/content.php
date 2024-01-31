@@ -22,6 +22,15 @@
         endif;    
     ?>
     <!--- Post Content -->
-    <div class="entry-content">
-        <?php the_excerpt();?>
-    </div>
+    <!--- If we are home or on the archive page show the shorter format --->
+    <?php if (is_home() || is_archive()) :?>
+        <div class="entry-content">
+            <?php the_excerpt();?>
+        </div>
+    <!--- if not and we are on the single page show all the content --->   
+    <?php elseif (is_single()) : ?>
+        <div class="entry-content">
+            <?php the_content();?>
+        </div>
+    <?php endif; ?>
+</article>
