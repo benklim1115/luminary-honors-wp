@@ -15,9 +15,15 @@ get_header();
                 the_post();
                  //will grab something like this content-page.php
                 get_template_part('template-parts/page/content', 'page');
+
+                //if we have comments show them
+                if (comments_open() || get_comments_number()) :
+                    comments_template();
+                endif;
             endwhile;
         ?>
     </main>
+    <?php get_sidebar(); ?>
 </div>
 
 <?php
