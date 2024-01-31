@@ -9,13 +9,23 @@ get_header();
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
         <?php 
-        while(have_posts()) :
-            the_post();
-            //single post content
-            the_content();
-        endwhile;
+            while(have_posts()) :
+                the_post();
+                //single post content
+                // the_content();
+                get_template_part('template-parts/post/content');
+            endwhile;
+
+            //If we have comments, show template
+            if (comments_open() || get_comments_number()) :
+                comments_template();
+            endif;
         ?>
     </main>
+    <!--- Sidebar content -->
+    <?php
+        get_sidebar();
+    ?>
 </div>
 
 <?php
