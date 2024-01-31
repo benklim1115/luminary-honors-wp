@@ -12,6 +12,7 @@ get_header();
         while(have_posts()) :
             the_post();
             //single post content
+            the_content();
         endwhile;
         ?>
     </main>
