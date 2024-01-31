@@ -12,10 +12,10 @@ get_header();
                 //start the loop
                 while (have_posts()) :
                     the_post();
-                    get_template_part('template-parts/post/content');
+                    get_template_part('template-parts/page/content', 'search');
                 endwhile;
 
-                //for pagination
+                //for pagination, keeping in case there are tons of results
                 echo paginate_links([
                     'prev_text' => esc_html__('Prev', 'Luminary Honors'),
                     'next_text' => esc_html__('Next', 'Luminary Honors')
