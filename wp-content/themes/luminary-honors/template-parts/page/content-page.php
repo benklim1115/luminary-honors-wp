@@ -26,6 +26,8 @@
         ?>
     </div>
 
+    <!--- We may not this this edit page section, just thought it looked cool to add --->
+
     <!--- Edit option for user --->
     <!--- Display the edit link if user has the permissions to edit it --->
     <?php if (get_edit_post_link()) :?>    
