@@ -21,6 +21,12 @@ get_header();
                     the_post();
                     get_template_part('template-parts/post/content', 'content');
                 endwhile;
+
+                //for pagination
+                echo paginate_links([
+                    'prev_text' => esc_html__('Prev', 'Luminary Honors'),
+                    'next_text' => esc_html__('Next', 'Luminary Honors')
+                ]);
             ?>
         <?php endif; ?>
     </main>
