@@ -21,6 +21,7 @@
             the_post_thumbnail('large');
         endif;    
     ?>
+
     <!--- Post Content -->
     <!--- If we are home or on the archive page show the shorter format --->
     <?php if (is_home() || is_archive()) :?>
@@ -30,7 +31,15 @@
     <!--- if not and we are on the single page show all the content --->   
     <?php elseif (is_single()) : ?>
         <div class="entry-content">
-            <?php the_content();?>
+            <?php 
+                the_content();
+
+                //to help us navigate through portions of the page, keeping for now
+                wp_link_pages( array(
+                    'before' => '<div class="page-links">' . esc_html__('Pages:', 'ninestars'),
+                    'after' => '</div>',
+                ));
+            ?>
         </div>
     <?php endif; ?>
 </article>
