@@ -27,5 +27,15 @@
                 }
             ?>
         </h2>
+        <!--- Comment pagination -->
+        <?php the_comments_navigation();?>
+        <ol class="comment-list">
+            <?php 
+                wp_list_comments([
+                    "style" => "ol",
+                    "short_ping" => true
+                ]);
+            ?>
+        </ol>
     <?php endif;?>
 </div>
