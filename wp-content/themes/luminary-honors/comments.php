@@ -37,5 +37,19 @@
                 ]);
             ?>
         </ol>
-    <?php endif;?>
+        <?php 
+            the_comments_navigation();
+            //if comments are closed, show this message
+            if (!comments_open()) :
+                printf(
+                    "<p class='no-comments'>%1$s</p>", 
+                    esc_html__("Comments are closed", "luminary-honors")
+                );
+            endif;
+        ?>
+    <?php 
+    endif;
+        //show the comment form
+        comment_form();
+    ?>
 </div>
