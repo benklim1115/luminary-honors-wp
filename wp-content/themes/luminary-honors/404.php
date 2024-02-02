@@ -13,6 +13,11 @@ get_header();
             <header class="page-header">
                 <h1 class="page-title"><?php esc_html_e("Oops! That page can&rsquo;t be found.", 'luminary-honors');?></h1>
             </header>
+
+            <div class="page-content">
+                <p><?php esc_html_e("It looks like nothing was found at this location. Maybe try one of the links below or searching a different route.");?></p>
+                <?php get_search_form();?>
+            </div>
         </section>
     </main>
 </div>
