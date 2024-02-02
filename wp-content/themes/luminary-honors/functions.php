@@ -24,6 +24,14 @@ if (!function_exists("theme_setup")) {
 
         //Add default posts and comments RSS feed links to head
         add_theme_support("automatic-feed-links");
+
+        /**
+         * Let Wordpress manage the document title.
+         * By adding theme support, we declare that this theme does not use a 
+         * hard-coded <title> tag in the document head, and expect Wordpress to
+         * provide it for us.
+         */
+        add_theme_support("title-tag");
     }
 }
 add_action("after_setup_theme", "theme_setup");
