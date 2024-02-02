@@ -30,7 +30,7 @@
         elseif (is_search()) :    
             ?>
 
-            <p><?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with a different result.');?>
+            <p><?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with a different search.');?>
             <?php
             get_search_form();
 
