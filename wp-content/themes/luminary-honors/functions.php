@@ -134,3 +134,21 @@ function luminary_honors_widgets_init() {
     ));
 }
 add_action("widgets_init", "luminary_honors_widgets_init");
+
+
+//HERE might be where we need to include our scss from Hunter's theming
+/**
+ * Enqueue public scripts and styles
+ */
+function luminary_honors_public_scripts() {
+
+}
+add_action("wp_enqueue_scripts", "luminary_honors_public_scripts");
+
+/**
+ * Enqueue admin styles and scripts
+ */
+function luminary_honors_admin_scripts() {
+
+}
+add_action("wp_enqueue_scripts", "luminary_honors_admin_scripts");
