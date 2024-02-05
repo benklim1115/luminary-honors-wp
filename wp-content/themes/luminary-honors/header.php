@@ -18,7 +18,7 @@
 
     <!--- Luminary Honors menu --->
     <nav class="primary-menu-container">
-        <h1 id="site-title">PRESIDENT'S Luminary HONORS</h1>
+        <h1 id="site-title"><a href="/">PRESIDENT'S Luminary HONORS</a></h1>
         <!--- Image for when we need it
         <img src="path/to/your/image.jpg" alt="My Custom Image">
         --->
@@ -30,10 +30,7 @@
             ));
         ?>
     </nav>  
-
-
     
-
     <!--- Commenting out hard coded header for now
     <header class="main-site-header">
         <h2 style="text-align: center; color: #AD976E; padding-top: 3rem; margin-top: 0px"> PRESIDENT'S Luminary HONORS </h2>
