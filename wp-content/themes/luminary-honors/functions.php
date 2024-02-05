@@ -71,6 +71,17 @@ if (!function_exists("luminary_honors_theme_setup")) {
             "flex-width" => true,
             "flex-height" => true,
         ));
+
+        /**
+         * Adding support for custom page header
+         */
+        add_theme_support("custom-header", array(
+            "flex-width" => true,
+            "width" => 1600,
+            "flex-height" => true,
+            "height" => 450,
+            "default-image" => "",
+        ));
     }
 }
 add_action("after_setup_theme", "luminary_honors_theme_setup");
