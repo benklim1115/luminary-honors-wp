@@ -17,15 +17,21 @@
     <body class="body-main" style="margin-top: 0;"<?php body_class($css_class = "body-main");?>>
 
     <!--- Luminary Honors menu --->
-    <?php
-        wp_nav_menu(array (
-            "theme_location" => "primary",
-            "menu_id" => "primary-menu",
-            "container" => "nav",
-            "container-class" => "primary-menu-container",
-            "menu_class" => "primary-menu-list"
-        ))
-    ?>
+    <nav class="primary-menu-container">
+        <h1 id="site-title">PRESIDENT'S Luminary HONORS</h1>
+        <!--- Image for when we need it
+        <img src="path/to/your/image.jpg" alt="My Custom Image">
+        --->
+        <?php
+            wp_nav_menu(array(
+                'theme_location' => 'primary',
+                'menu_id'        => 'primary-menu',
+                'menu_class'     => 'primary-menu-list',
+            ));
+        ?>
+    </nav>  
+
+
     
 
     <!--- Commenting out hard coded header for now
