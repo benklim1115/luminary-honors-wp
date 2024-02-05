@@ -30,9 +30,3 @@
         ?>
     </nav>  
     
-    <!--- Commenting out hard coded header for now
-    <header class="main-site-header">
-        <h2 style="text-align: center; color: #AD976E; padding-top: 3rem; margin-top: 0px"> PRESIDENT'S Luminary HONORS </h2>
-        <p style="text-align: center; color: #AD976E;">UT Health San Antonio</p>
-    </header>
-    --->
