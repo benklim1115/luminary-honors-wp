@@ -57,6 +57,10 @@ if (!function_exists("luminary_honors_theme_setup")) {
             "gallery",
             "caption",
         ));
+
+        //Theme support for selective refresh for widgets
+        //Adding for now, not entirely sure which widgets it means
+        add_theme_support("customizable-selective-refresh-widgets");
     }
 }
 add_action("after_setup_theme", "luminary_honors_theme_setup");
