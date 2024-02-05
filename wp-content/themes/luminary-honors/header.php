@@ -18,10 +18,9 @@
 
     <!--- Luminary Honors menu --->
     <nav class="primary-menu-container">
-        <h1 id="site-title"><a href="/">PRESIDENT'S Luminary HONORS</a></h1>
-        <!--- Image for when we need it
-        <img src="path/to/your/image.jpg" alt="My Custom Image">
-        --->
+        <a href="/">
+            <img id="site-title-img" src="<?php echo get_template_directory_uri();?>/src/assets/images/logo.svg" alt="My Custom Image">
+        </a>
         <?php
             wp_nav_menu(array(
                 'theme_location' => 'primary',
