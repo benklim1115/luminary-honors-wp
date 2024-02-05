@@ -89,6 +89,13 @@ if (!function_exists("luminary_honors_theme_setup")) {
          * Adding post type support
          */
         add_theme_support("post-formats", array("aside", "gallery", "link", "image", "quote", "video", "audio"));
+
+        /**
+         * Uses wp_nav_menu() in one location.
+         */
+        register_nav_menus( array(
+            "primary" => esc_html__("Primary", "luminary-honors")
+        )); 
     }
 }
 
