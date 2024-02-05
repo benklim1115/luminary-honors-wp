@@ -96,9 +96,11 @@ if (!function_exists("luminary_honors_theme_setup")) {
         register_nav_menus( array(
             "primary" => esc_html__("Primary", "luminary-honors"),
             "footer" => esc_html__("Footer Menu", "luminary-honors")
-        )); 
+        ));
+        
     }
 }
+add_action("after_setup_theme", "luminary_honors_theme_setup");
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet
@@ -113,4 +115,22 @@ function luminary_honors_content_width() {
     //phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NoPrefixedVariableFound
     $GLOBALS["content-width"] = apply_filters("luminary_honors_content_width", 1170);
 }
-add_action("after_setup_theme", "luminary_honors_theme_setup");
+add_action("after_setup_theme", "luminary_honors_content_width", 0);
+
+/**
+ * Register sidebar widget area
+ * 
+ * @since 1.0.0
+ */
+function luminary_honors_widgets_init() {
+    register_sidebar(array(
+        "name" => esc_html__("Sidebar", "luminary-honors"),
+        "id" => "default-sidebar",
+        "description" => esc_html__("Add widgets here", "luminary-honors"),
+        "before_widget" => '<section id="%1$s" class="widget %2$s">',
+        "after_widget" => "</section>",
+        "before_title" => "<h4 class='widget-title'>",
+        "after_title" => "</h4>"
+    ));
+}
+add_action("widgets_init", "luminary_honors_widgets_init");
