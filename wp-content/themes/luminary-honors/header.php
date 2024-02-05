@@ -13,6 +13,9 @@
 
         <?php wp_head();?>
     </head>
-    <body <?php body_class();?>>
+    <body style="margin-top: 0"<?php body_class();?>>
 
-    <h2 style="text-align: center"> President's Luminary Honors </h2>
+    <header id="main-site-header" style="background-color: black; height: 10rem; margin-bottom: 2rem;">
+        <h2 style="text-align: center; color: #AD976E; padding-top: 3rem; margin-top: 0px"> PRESIDENT'S Luminary HONORS </h2>
+        <p style="text-align: center; color: #AD976E;">UT Health San Antonio</p>
+    </header>
