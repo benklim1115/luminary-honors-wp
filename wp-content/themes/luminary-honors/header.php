@@ -13,9 +13,10 @@
 
         <?php wp_head();?>
     </head>
-    <body style="margin-top: 0"<?php body_class();?>>
+    <!--- we can pass in our class in body_class to override css --->
+    <body class="body-main" style="margin-top: 0;"<?php body_class($css_class = "body-main");?>>
 
-    <header id="main-site-header" style="background-color: black; height: 10rem; margin-bottom: 2rem;">
+    <header class="main-site-header">
         <h2 style="text-align: center; color: #AD976E; padding-top: 3rem; margin-top: 0px"> PRESIDENT'S Luminary HONORS </h2>
         <p style="text-align: center; color: #AD976E;">UT Health San Antonio</p>
     </header>
