@@ -94,7 +94,8 @@ if (!function_exists("luminary_honors_theme_setup")) {
          * Uses wp_nav_menu() in one location.
          */
         register_nav_menus( array(
-            "primary" => esc_html__("Primary", "luminary-honors")
+            "primary" => esc_html__("Primary", "luminary-honors"),
+            "footer" => esc_html__("Footer Menu", "luminary-honors")
         )); 
     }
 }
