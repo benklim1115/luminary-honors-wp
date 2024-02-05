@@ -61,6 +61,16 @@ if (!function_exists("luminary_honors_theme_setup")) {
         //Theme support for selective refresh for widgets
         //Adding for now, not entirely sure which widgets it means
         add_theme_support("customizable-selective-refresh-widgets");
+
+        /**
+         * Adding support for custom logo
+         */
+        add_theme_support("custom-logo", array(
+            "height" => 250,
+            "width" => 250,
+            "flex-width" => true,
+            "flex-height" => true,
+        ));
     }
 }
 add_action("after_setup_theme", "luminary_honors_theme_setup");
