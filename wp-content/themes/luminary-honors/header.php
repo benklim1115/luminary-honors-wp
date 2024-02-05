@@ -19,7 +19,7 @@
     <!--- Luminary Honors menu --->
     <nav class="primary-menu-container">
         <a href="/">
-            <img id="site-title-img" src="<?php echo get_template_directory_uri();?>/src/assets/images/logo.svg" alt="My Custom Image">
+            <img id="main-title-img" src="<?php echo get_template_directory_uri();?>/src/assets/images/logo.svg" alt="My Custom Image">
         </a>
         <?php
             wp_nav_menu(array(
