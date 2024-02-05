@@ -43,7 +43,7 @@ if (!function_exists("luminary_honors_theme_setup")) {
         // Set up the Wordpress core custom background feature
         add_theme_support("custom-background", apply_filters("luminary-honors_custom_background_args", array(
             "default-color" => "ffffff",
-            "default-image" => "",
+            "default-image" => ""
         )));
 
         /**
@@ -55,11 +55,13 @@ if (!function_exists("luminary_honors_theme_setup")) {
             "comment-form",
             "comment-list",
             "gallery",
-            "caption",
+            "caption"
         ));
 
-        //Theme support for selective refresh for widgets
-        //Adding for now, not entirely sure which widgets it means
+        /**
+         * Theme support for selective refresh for widgets
+         * Adding for now, not entirely sure which widgets it means
+         */
         add_theme_support("customizable-selective-refresh-widgets");
 
         /**
@@ -69,7 +71,7 @@ if (!function_exists("luminary_honors_theme_setup")) {
             "height" => 250,
             "width" => 250,
             "flex-width" => true,
-            "flex-height" => true,
+            "flex-height" => true
         ));
 
         /**
@@ -80,8 +82,13 @@ if (!function_exists("luminary_honors_theme_setup")) {
             "width" => 1600,
             "flex-height" => true,
             "height" => 450,
-            "default-image" => "",
+            "default-image" => ""
         ));
+
+        /**
+         * Adding post type support
+         */
+        add_theme_support("post-formats", array("aside", "gallery", "link", "image", "quote", "video", "audio"));
     }
 }
 add_action("after_setup_theme", "luminary_honors_theme_setup");
