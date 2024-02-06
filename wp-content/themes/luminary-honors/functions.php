@@ -137,11 +137,21 @@ add_action("widgets_init", "luminary_honors_widgets_init");
 
 
 //HERE might be where we need to include our scss from Hunter's theming
+//Ok this is 100% where we hook up the stylesheets and scripts
 /**
  * Enqueue public scripts and styles
  */
 function luminary_honors_public_scripts() {
 
+    // Styles.
+    // Handle, source, dependency, version, media
+    wp_enqueue_style("main", get_template_directory_uri() . "/assets/css/main.css", [], wp_rand(), "all");
+    wp_enqueue_style("default", get_template_directory_uri() . "/assets/css/default.css", [], wp_rand(), "all");
+
+    // Scripts.
+    // Handle, source, dependency, version, 
+    // we might need to declare our specific dependencies within here
+    wp_enqueue_script("main", get_template_directory_uri() . "/assets/js/main.js", ["jquery"], wp_rand(), true);
 }
 add_action("wp_enqueue_scripts", "luminary_honors_public_scripts");
 
