@@ -5,12 +5,12 @@
 ?>
 
 <article id="post-<?php the_ID();?>">
-    <?php the_title('<h1 class="entry-title">', '</h1>');?>
+    <?php the_title("<h1 class='entry-title'>", "</h1>");?>
 
     <?php
         //page thumbnail
         if (has_post_thumbnail()) :
-            the_post_thumbnail('full');
+            the_post_thumbnail("full");
         endif; 
     ?>
 
@@ -20,8 +20,8 @@
             the_content();
 
             wp_link_pages( array(
-                'before' => '<div class="page-links">' . esc_html__('Pages:', 'ninestars'),
-                'after' => '</div>',
+                "before" => "<div class='page-links'>" . esc_html__("Pages:", "luminary-honors"),
+                "after" => "</div>",
             ));
         ?>
     </div>

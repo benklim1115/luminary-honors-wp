@@ -11,16 +11,16 @@ get_header();
             if (have_posts()) :
                 while (have_posts()) :
                     the_post();
-                    get_template_part("template-parts/post/content");
+                    get_template_part("template-parts/post/content", get_post_format());
                 endwhile;
             
             
             echo paginate_links([
-                'prev_text' => esc_html__('Prev', 'luminary-honors'),
-                'next_text' => esc_html__('Next', 'luminary-honors')
+                "prev_text" => esc_html__("Prev", "luminary-honors"),
+                "next_text" => esc_html__("Next", "luminary-honors")
             ]);
             else : 
-                get_template_part('template-parts/page/content', 'none');  
+                get_template_part("template-parts/page/content", "none");  
             endif;
         ?>
     </main>

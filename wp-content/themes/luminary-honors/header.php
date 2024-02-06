@@ -8,7 +8,7 @@
 
 <html <?php language_attributes();?>>
     <head>
-        <meta charset="<?php bloginfo('charset');?>">
+        <meta charset="<?php bloginfo("charset");?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <?php wp_head();?>
@@ -23,9 +23,9 @@
         </a>
         <?php
             wp_nav_menu(array(
-                'theme_location' => 'primary',
-                'menu_id'        => 'primary-menu',
-                'menu_class'     => 'primary-menu-list',
+                "theme_location" => "primary",
+                "menu_id"        => "primary-menu",
+                "menu_class"     => "primary-menu-list",
             ));
         ?>
     </nav>  

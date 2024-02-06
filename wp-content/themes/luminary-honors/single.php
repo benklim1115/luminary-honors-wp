@@ -15,7 +15,7 @@ get_header();
                 the_post();
                 //single post content
                 // the_content();
-                get_template_part('template-parts/post/content', get_post_format());
+                get_template_part("template-parts/post/content", get_post_format());
             endwhile;
 
             //If we have comments, show template

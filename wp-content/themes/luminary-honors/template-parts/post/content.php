@@ -9,7 +9,7 @@
         <?php
             //if its the single page, don't show the link for the title
             if (is_singular()) :
-                the_title('<h1 class="entry-title">', '</h1>');
+                the_title("<h1 class='entry-title'>", "</h1>");
             else :
                 the_title('<h2 class="entry-title"><a class="entry-link" href="'.esc_url(get_permalink()).'">', '</a></h2>');
             endif;    
@@ -18,7 +18,7 @@
     <!--- Post thumbnail --->
     <?php 
         if (has_post_thumbnail()) :
-            the_post_thumbnail('large');
+            the_post_thumbnail("large");
         endif;    
     ?>
 
@@ -36,8 +36,8 @@
 
                 //to help us navigate through portions of the page, keeping for now
                 wp_link_pages( array(
-                    'before' => '<div class="page-links">' . esc_html__('Pages:', 'ninestars'),
-                    'after' => '</div>',
+                    "before" => "<div class='page-links'>" . esc_html__("Pages:", "luminary-honors"),
+                    "after" => "</div>",
                 ));
             ?>
         </div>
