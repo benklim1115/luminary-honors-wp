@@ -3,6 +3,8 @@
  * Single page template, displays an individual post
  */
 
+//this will tell what post format we are using
+echo get_post_format();
 get_header();
 ?>
 
