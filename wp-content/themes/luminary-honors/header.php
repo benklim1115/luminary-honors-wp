@@ -10,6 +10,8 @@
     <head>
         <meta charset="<?php bloginfo("charset");?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--- Free version of font-awesome --->
+        <script src="https://kit.fontawesome.com/c726fe9217.js" crossorigin="anonymous"></script>
 
         <?php wp_head();?>
     </head>
