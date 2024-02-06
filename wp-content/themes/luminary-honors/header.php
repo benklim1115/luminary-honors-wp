@@ -14,7 +14,7 @@
         <?php wp_head();?>
     </head>
     <!--- we can pass in our class in body_class to override css --->
-    <body class="body-main" style="margin-top: 0;"<?php body_class($css_class = "body-main");?>>
+    <body class="body-main"<?php body_class($css_class = "body-main");?>>
 
     <!--- Luminary Honors menu --->
     <nav class="primary-menu-container">
