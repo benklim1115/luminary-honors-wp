@@ -13,14 +13,19 @@ get_header();
                     the_post();
                     get_template_part("template-parts/post/content");
                 endwhile;
-            endif;
+            
             
             echo paginate_links([
                 'prev_text' => esc_html__('Prev', 'luminary-honors'),
                 'next_text' => esc_html__('Next', 'luminary-honors')
             ]);
+            else : 
+                get_template_part('template-parts/page/content', 'none');  
+            endif;
         ?>
     </main>
+
+    <?php get_sidebar();?>
 </div>
 <?php
 get_footer();

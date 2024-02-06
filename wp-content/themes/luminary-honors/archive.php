@@ -28,10 +28,12 @@ get_header();
                     'next_text' => esc_html__('Next', 'Luminary Honors')
                 ]);
 
-        else : 
-            get_template_part('template-parts/page/content', 'none');       
-        ?>
+            else : 
+                get_template_part('template-parts/page/content', 'none');       
+            ?>
         <?php endif; ?>
+
+        <?php get_sidebar();?>
     </main>
 </div>
 
