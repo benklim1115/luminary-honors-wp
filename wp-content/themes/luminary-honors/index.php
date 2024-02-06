@@ -1,15 +1,11 @@
 <?php
 /** 
- * 
+ * The main template file.
 **/
+?>
 
-get_header();
-    get_search_form();
-    if (have_posts()) : 
-        while (have_posts()) :
-            the_post();
-            //do our stuff
-            get_template_part('template-parts/post/content');
-        endwhile;
-    endif;    
-get_footer();
+<div id="primary" class="content-area">
+    <main id="main" class="site-main">
+        
+    </main>
+</div>
