@@ -145,13 +145,13 @@ function luminary_honors_public_scripts() {
 
     // Styles.
     // Handle, source, dependency, version, media
-    wp_enqueue_style("main", get_template_directory_uri() . "/assets/css/main.css", [], wp_rand(), "all");
-    wp_enqueue_style("default", get_template_directory_uri() . "/assets/css/default.css", [], wp_rand(), "all");
+    wp_enqueue_style("main", get_template_directory_uri() . "/src/assets/css/main.css", [], wp_rand(), "all");
+    wp_enqueue_style("default", get_template_directory_uri() . "/src/assets/css/default.css", [], wp_rand(), "all");
 
     // Scripts.
     // Handle, source, dependency, version, 
     // we might need to declare our specific dependencies within here
-    wp_enqueue_script("main", get_template_directory_uri() . "/assets/js/main.js", ["jquery"], wp_rand(), true);
+    wp_enqueue_script("main", get_template_directory_uri() . "/src/assets/js/main.js", ["jquery"], wp_rand(), true);
 }
 add_action("wp_enqueue_scripts", "luminary_honors_public_scripts");
 
