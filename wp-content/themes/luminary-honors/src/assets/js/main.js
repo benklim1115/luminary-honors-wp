@@ -3,8 +3,8 @@
 //testing if js is working within site
 document.addEventListener('DOMContentLoaded', function() {
 
-    alert("Hello there? is this working?");
-    
+    // alert("Hello there? is this working?");
+
     $(window).scroll(function () {
 
         const observer = new IntersectionObserver(entries => {

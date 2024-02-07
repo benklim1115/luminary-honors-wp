@@ -1,0 +1,23 @@
+/* ============================================================
+    BUTTONS
+============================================================ */
+
+.button {
+    background-color: $gold;
+    border-radius: rem-calc(3px);
+    color: $white;
+    font-size: rem-calc(18px);
+    font-weight: 500;
+
+}
+
+.button:hover,
+.button:focus {
+    background-color: darken($gold, 15%);
+}
+
+@media screen and (max-width: $small-screen) {
+    .button {
+        width: 100%;
+    }
+}

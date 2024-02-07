@@ -1,0 +1,211 @@
+.flame-body {
+    //height: 5000px;
+    background-color: $black;
+    color: $gold;
+
+    .off-canvas-content {
+        position: sticky;
+        top: 10px;
+    }
+
+
+    .flame-section {
+
+        .grid-container.large {
+
+            height: 1000px;
+
+            &.match-container {
+                position: sticky;
+                top: 100px;
+                transition: .5s ease-in;
+
+            }
+
+            &.flame-container {
+
+                position: sticky;
+                top: 300px;
+            }
+
+            &.text-container {
+                position: sticky;
+                top: 100px;
+                transition: .5s ease-in;
+                text-align: right;
+            }
+
+            &.text-container-2 {
+                position: sticky;
+                top: 150px;
+                transition: .5s ease-in;
+                text-align: right;
+            }
+
+            &.buffer {
+                height: 500px;
+            }
+
+            .grid-x {
+                height: 100%;
+
+            }
+        }
+    }
+
+    .fa-arrow-down {
+        color: $gold;
+        position: fixed;
+        width: 15px;
+        left: 49%;
+        bottom: 5%;
+
+        animation-name: arrowBounce;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50% 0;
+    }
+}
+
+
+.flame {
+    opacity: 0;
+    position: sticky;
+    top: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s ease-in;
+}
+
+.flame-wobble {
+    opacity: 1;
+    animation-name: flameWobble;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50% 0;
+}
+
+.match {
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+    transition: .5s ease-in;
+}
+
+.flame-logo {
+    //opacity: 0;
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.875rem;
+    transition: .5s ease-in;
+}
+
+.flame-date {
+    margin: 30px 0 30px 0;
+}
+
+.arrow-down {
+    color: $gold;
+    position: absolute;
+    width: 15px;
+    left: 50%;
+    bottom: 5%;
+}
+
+.flame-hide {
+    opacity: 0;
+}
+
+.flame-shrink {
+    opacity: 0;
+    animation-name: flameShrink;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50% 0;
+}
+
+.grid-y {
+    height: 1000px;
+}
+
+@media screen and (max-width: $medium-screen) {
+    #flame-text-1 {
+        margin-bottom: 6rem;
+    }
+
+    .flame {
+        width: 50px;
+    }
+
+    .match {
+        width: 15px;
+    }
+
+    .flame-body {
+
+        .flame-section {
+
+            .grid-container.large {
+
+                &.flame-container {
+
+                    top: 200px;
+                }
+
+                &.text-container {
+                    top: 300px;
+                    text-align: center;
+                }
+
+                &.text-container-2 {
+                    top: 350px;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}
+
+
+@keyframes flameWobble {
+
+    50% {
+        transform: scale(1, 1.2) translate(0, -20px) rotate(-2deg);
+    }
+}
+
+
+@keyframes arrowBounce {
+    50% {
+        transform: translate(0, 10px);
+    }
+}
+
+@keyframes flameShrink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(.5);
+    }
+
+    75% {
+        transform: scale (.25);
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}

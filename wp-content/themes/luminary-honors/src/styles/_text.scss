@@ -1,0 +1,198 @@
+/* ============================================================
+    TEXT STYLES
+============================================================ */
+
+//Setting rem size to 16px by default (This is a fix for an issue in FireFix where font size was not rendering properly)
+html {
+    font-size: 16px;
+
+}
+
+//Setting text size to 18px
+body {
+    font-size: 18px;
+    font-family: $font;
+    color: $black;
+}
+
+// ======= Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font;
+
+}
+
+
+
+body {
+    font-family: $font;
+    line-height: 1.2;
+}
+
+/*============== RESPONSIVE HEADING SIZES ===================
+For the base heading sizes, rem-calc() is not calculating properly, so please leave the sizes in pixels.
+*/
+h1,
+.h1 {
+    font-size: 62px;
+    font-weight: 400;
+
+    /*---- MEDIUM or TABLET----*/
+    @media screen and (max-width: $medium-screen) {
+        font-size: 53px;
+    }
+
+    /*---- SMALL or MOBILE----*/
+    @media screen and (max-width: $small-screen) {
+        font-size: 41px;
+    }
+
+}
+
+h2,
+.h2 {
+    font-size: 38px;
+    font-weight: 400;
+
+    /*---- MEDIUM or TABLET----*/
+    @media screen and (max-width: $medium-screen) {
+        font-size: 34px;
+    }
+
+    /*---- SMALL or MOBILE----*/
+    @media screen and (max-width: $small-screen) {
+        font-size: 28px;
+    }
+
+}
+
+h3,
+.h3 {
+    font-size: 32px;
+    font-weight: 400;
+
+    /*---- MEDIUM or TABLET----*/
+    @media screen and (max-width: $medium-screen) {
+        font-size: 28px;
+    }
+
+    /*---- SMALL or MOBILE----*/
+    @media screen and (max-width: $small-screen) {
+        font-size: 22px;
+    }
+
+}
+
+h4,
+.h4 {
+    font-size: 28px;
+    font-weight: 400;
+
+    /*---- MEDIUM or TABLET----*/
+    @media screen and (max-width: $medium-screen) {
+        font-size: 25px;
+    }
+
+    /*---- SMALL or MOBILE----*/
+    @media screen and (max-width: $small-screen) {
+        font-size: 20px;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 24px;
+    font-weight: 400;
+
+    /*---- MEDIUM or TABLET----*/
+    @media screen and (max-width: $medium-screen) {
+        font-size: 21px;
+    }
+
+    /*---- SMALL or MOBILE----*/
+    @media screen and (max-width: $small-screen) {
+        font-size: 18px;
+    }
+}
+
+h6,
+.h6 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+// Text Styles
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &.color {
+        color: $gold;
+    }
+
+}
+
+h1 {
+    font-weight: 300 !important;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.pipe {
+    border-left: 3px solid $gold;
+    padding-left: 18px;
+}
+
+.pipe-right {
+    border-right: 3px solid $gold;
+    padding-right: 18px;
+}
+
+.sponsorship {
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        display: inline-block;
+    }
+
+    p {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+}
+
+.invitation {
+    font-size: 28px;
+}
+
+.invitation .white {
+    color: $white;
+    font-style: normal;
+}
+
+// Link Styles
+
+a {
+    color: $blue;
+    font-weight: 600;
+    transition: .5s ease-out;
+}
+
+a:hover {
+    color: darken($blue, 15%);
+}
+
+// List Styles

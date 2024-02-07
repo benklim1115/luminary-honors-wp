@@ -1,0 +1,37 @@
+footer {
+    background-color: $black;
+    padding: 50px 0 50px 0;
+    color: $white;
+
+    a {
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: 1px solid $white;
+
+
+        &:hover {
+            color: $gold;
+        }
+    }
+
+    ul:not(.social) {
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+
+        li {
+            padding-left: 1em;
+
+            &:after {
+                display: inline-block;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f105";
+                color: inherit;
+                margin-left: .3rem;
+                transition: .5s ease-out;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+/* ============================================================
+
+    VARIABLES
+
+    Includes: Typography, Font Weights, Colors, Icons, Shadows, Padding & Margin, Rounded Corners
+
+============================================================ */
+
+// ======= Grid
+$global-width: rem-calc(1440px);
+
+// ======= Typography
+
+$font: 'Lato', sans-serif;
+$fa-font-path: "node_modules/@fortawesome/fontawesome-free/webfonts/";
+
+// ======= Font Weights
+
+$black-font-weight: 900;
+$bold-font-weight: 700;
+
+// ======= Colors
+
+$black: #171717;
+$white: #F1F5F7;
+$gold: #AD976E;
+$blue: #27829E;
+
+// ======= Screen sizes
+
+$small-screen: 639px;
+$medium-screen: 1024px;

@@ -1,0 +1,14 @@
+header {
+    padding: 22px 0 22px 0;
+    color: $gold;
+    background-color: $black;
+
+    .menu-icon {
+
+        &:after {
+            background: $gold;
+            box-shadow: 0 7px 0 $gold, 0 14px 0 $gold;
+        }
+    }
+
+}

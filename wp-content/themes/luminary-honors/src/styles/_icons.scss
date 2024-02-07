@@ -1,0 +1,30 @@
+footer {
+    ul.social {
+        list-style-type: none;
+
+        li {
+            margin-right: rem-calc(7px);
+            display: inline;
+
+            a {
+                color: $white;
+
+                &:hover {
+                    color: $gold;
+                }
+
+                .fa-2x {
+                    font-size: rem-calc(40px)
+                }
+            }
+        }
+    }
+}
+
+.circle:after {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-size: .5em;
+    content: "\f111";
+}
