@@ -15,8 +15,25 @@ get_header();
         <?php 
             while (have_posts()) :
                 the_post();
-                 //will grab something like this content-page.php
-                get_template_part("template-parts/page/content", "page");
+
+                // Check if we are on the /sponsorships page
+                if (is_page('sponsorships')) :
+                    get_template_part("template-parts/page/content", "sponsorships");
+
+                // Check if we are on the /honorees page
+                elseif (is_page('honorees')) :
+                    get_template_part("template-parts/page/content", "honorees");
+
+                // Check if we are on the /rsvp page
+                elseif (is_page('rsvp')) :
+                    get_template_part("template-parts/page/content", "rsvp");
+
+                // Default case, load the generic content page
+                // maybe this should redirect to home or 404?
+                else :
+                    get_template_part("template-parts/page/content", "page");
+
+                endif;   
 
                 //if we have comments show them
                 if (comments_open() || get_comments_number()) :
