@@ -148,6 +148,9 @@ function luminary_honors_public_scripts() {
     wp_enqueue_style("main", get_template_directory_uri() . "/src/assets/css/main.css", [], wp_rand(), "all");
     wp_enqueue_style("default", get_template_directory_uri() . "/src/assets/css/default.css", [], wp_rand(), "all");
 
+    // MAIN STYLE TO BE RENDERED WHEN PAGES ARE SET UP
+    // wp_enqueue_style("main", get_template_directory_uri() . "dist/assets/css/main.css", [], wp_rand(). "all");
+
     // Scripts.
     // Handle, source, dependency, version, 
     // we might need to declare our specific dependencies within here
