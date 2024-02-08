@@ -67,9 +67,10 @@ main#main {
 */
 
 
+
 /************ FOOTER ************/
 .footer-menu-container {
-	margin-top: 2rem;
+	margin-top: auto;
 	margin-right: 0;
 	margin-left: 0;
 	margin-bottom: 0;
