@@ -1,0 +1,26 @@
+{
+    "name": "web-digital-services/luminary-honors",
+    "description": "WordPress website",
+    "type": "project",
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "WebDigitalServices\\LuminaryHonors\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ben Klimchock",
+            "email": "klimchock@uthscsa.edu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
