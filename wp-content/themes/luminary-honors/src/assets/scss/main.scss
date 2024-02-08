@@ -4,23 +4,23 @@
 
 @use "sass:math";
 
-@import "/../luminary-honors-wp/wp-content/themes/luminary-honors/node_modules/foundation-sites/scss/foundation.scss";
+@import "../../../node_modules/foundation-sites/scss/foundation";
 @include foundation-everything;
 
 /* ==============================
     FONTAWESOME
 ============================== */
 
-@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/brands";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 
 /* ==============================
     MOTION UI
 ============================== */
 
-@import '../node_modules/motion-ui/motion-ui';
+@import '../../../node_modules/motion-ui/motion-ui';
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
