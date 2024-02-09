@@ -10,7 +10,6 @@ get_header();
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
 
-        <h1>Where does this show up?</h1>
         <!--- loop to print out the page --->
         <?php 
             while (have_posts()) :
