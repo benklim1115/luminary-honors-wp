@@ -19,7 +19,7 @@
     <!--- we can pass in our class in body_class to override css --->
     <body class="body-main"<?php body_class($css_class = "body-main");?>>
 
-    <!--- Luminary Honors menu --->
+    <!--- Luminary Honors menu links --->
         <div class="off-canvas position-left" id="main-nav" data-off-canvas data-animate="fade-in fade-out">
             <div>
                 <button class="close-button" aria-label="Close alert" type="button" data-close>
