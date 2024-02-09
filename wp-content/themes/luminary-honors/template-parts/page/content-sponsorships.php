@@ -137,3 +137,9 @@
 
  </main>
 </div>
+
+<!--- Saw this on template keeping if we need it later
+<script>
+    $(document).foundation();
+</script>
+--->
