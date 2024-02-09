@@ -22,16 +22,6 @@
             </ul>
         </div>
 
-        <!--- 
-        <div class="footer-section">
-            <div class="social-media-link">1</div>
-            <div class="social-media-link">2</div>
-            <div class="social-media-link">3</div>
-            <div class="social-media-link">4</div>
-            <div class="social-media-link">5</div>
-        </div>
-        --->
-
         <div class="footer-section">
             <ul class="social">
                 <li><a href="#"><i class="fab fa-instagram-square fa-2x social-media-link"></i></a></li>
