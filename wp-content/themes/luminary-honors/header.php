@@ -44,7 +44,7 @@
                             <button class="menu-icon" type="button" data-toggle="main-nav"></button>
                         </div>
                         <div class="small-12 medium-8 cell text-center">
-                            <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/src/assets/images/logo.svg"></a>
+                            <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/src/assets/images/logo.svg" alt="President's Luminary Honors logo"></a>
                         </div>
                         <div class="small-12 medium-auto cell">
                         </div>
