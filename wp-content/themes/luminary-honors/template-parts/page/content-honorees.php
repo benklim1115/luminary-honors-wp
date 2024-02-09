@@ -17,8 +17,7 @@
             <div class="grid-x grid-margin-x margin-bottom-3">
                 <div class="cell small-12 medium-4">
 
-                    <img src="../images/Long.jpg" class="pipe-right"></a>
-
+                    <img src="<?php echo get_template_directory_uri(); ?>/src/assets/images/Long.jpg" alt="Joe R. Long" class="pipe-right"></a>
 
                 </div>
                 <div class="cell small-12 medium-8">
@@ -37,8 +36,7 @@
             <div class="grid-x grid-margin-x margin-bottom-3">
                 <div class="cell small-12 medium-4">
 
-                    <img src="../images/Klesses.jpg" class="pipe-right"></a>
-
+                    <img src="<?php echo get_template_directory_uri(); ?>/src/assets/images/Klesses.jpg" alt="Margie and Bill Klesse" class="pipe-right"></a>
 
                 </div>
                 <div class="cell small-12 medium-8">
@@ -63,8 +61,7 @@
             <div class="grid-x grid-margin-x margin-bottom-3">
                 <div class="cell small-12 medium-4">
 
-                    <img src="../images/Mays.jpg" class="pipe-right"></a>
-
+                    <img src="<?php echo get_template_directory_uri(); ?>/src/assets/images/Mays.jpg" alt="Mays Family Foundation" class="pipe-right"></a>
 
                 </div>
                 <div class="cell small-12 medium-8">
