@@ -27,10 +27,10 @@
                 </button>
             </div>
             <ul class="vertical menu align-left nav-text">
-                <li><a href="/src/pages/flame-2.html">Home</a></li>
-                <li><a href="/src/pages/sponsorship.html">Sponsorships</a></li>
-                <li><a href="/src/pages/honorees.html">Honorees</a></li>
-                <li><a href="#">RSVP</a></li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/sponsorships">Sponsorships</a></li>
+                <li><a href="/honorees">Honorees</a></li>
+                <li><a href="/rsvp">RSVP</a></li>
             </ul>
         </div>
 
