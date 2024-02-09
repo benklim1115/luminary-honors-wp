@@ -9,14 +9,15 @@
 <html <?php language_attributes();?>>
     <head>
         <meta charset="<?php bloginfo("charset");?>">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--- Free version of font-awesome --->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>President's Luminary Honors</title>
         <script src="https://kit.fontawesome.com/c726fe9217.js" crossorigin="anonymous"></script>
 
         <?php wp_head();?>
     </head>
     <!--- we can pass in our class in body_class to override css --->
-    <body class="body-main"<?php body_class($css_class = "body-main");?>>
+    <body <?php body_class();?>>
 
     <!--- Luminary Honors menu --->
     <nav class="primary-menu-container">
