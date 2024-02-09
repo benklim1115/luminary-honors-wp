@@ -16,16 +16,21 @@ get_header();
             while (have_posts()) :
                 the_post();
 
+                // Check if we are on the / page
+                // /landing or /flame?
+                if (is_page("home")) :
+                    get_template_part("template-parts/page/content", "flame");
+
                 // Check if we are on the /sponsorships page
-                if (is_page('sponsorships')) :
+                elseif (is_page("sponsorships")) :
                     get_template_part("template-parts/page/content", "sponsorships");
 
                 // Check if we are on the /honorees page
-                elseif (is_page('honorees')) :
+                elseif (is_page("honorees")) :
                     get_template_part("template-parts/page/content", "honorees");
 
                 // Check if we are on the /rsvp page
-                elseif (is_page('rsvp')) :
+                elseif (is_page("rsvp")) :
                     get_template_part("template-parts/page/content", "rsvp");
 
                 // Default case, load the generic content page
