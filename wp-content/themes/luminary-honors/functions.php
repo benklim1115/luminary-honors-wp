@@ -143,13 +143,13 @@ add_action("widgets_init", "luminary_honors_widgets_init");
  */
 function luminary_honors_public_scripts() {
 
-    // Styles.
+    // My test styles.
     // Handle, source, dependency, version, media
-    wp_enqueue_style("main", get_template_directory_uri() . "/src/assets/css/main.css", [], wp_rand(), "all");
-    wp_enqueue_style("default", get_template_directory_uri() . "/src/assets/css/default.css", [], wp_rand(), "all");
+    // wp_enqueue_style("main", get_template_directory_uri() . "/src/assets/css/main.css", [], wp_rand(), "all");
+    // wp_enqueue_style("default", get_template_directory_uri() . "/src/assets/css/default.css", [], wp_rand(), "all");
 
     // MAIN STYLE TO BE RENDERED WHEN PAGES ARE SET UP
-    // wp_enqueue_style("main", get_template_directory_uri() . "dist/assets/css/main.css", [], wp_rand(). "all");
+    wp_enqueue_style("main", get_template_directory_uri() . "/dist/assets/css/main.css", [], wp_rand(). "all");
 
     // Scripts.
     // Handle, source, dependency, version, 

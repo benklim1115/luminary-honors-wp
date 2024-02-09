@@ -17,19 +17,38 @@
         <?php wp_head();?>
     </head>
     <!--- we can pass in our class in body_class to override css --->
-    <body <?php body_class();?>>
+    <body class="body-main"<?php body_class($css_class = "body-main");?>>
 
     <!--- Luminary Honors menu --->
-    <nav class="primary-menu-container">
-        <a href="/">
-            <img id="main-title-img" src="<?php echo get_template_directory_uri();?>/src/assets/images/logo.svg" alt="My Custom Image">
-        </a>
-        <?php
-            wp_nav_menu(array(
-                "theme_location" => "primary",
-                "menu_id"        => "primary-menu",
-                "menu_class"     => "primary-menu-list",
-            ));
-        ?>
-    </nav>  
+        <div class="off-canvas position-left" id="main-nav" data-off-canvas data-animate="fade-in fade-out">
+            <div>
+                <button class="close-button" aria-label="Close alert" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <ul class="vertical menu align-left nav-text">
+                <li><a href="/src/pages/flame-2.html">Home</a></li>
+                <li><a href="/src/pages/sponsorship.html">Sponsorships</a></li>
+                <li><a href="/src/pages/honorees.html">Honorees</a></li>
+                <li><a href="#">RSVP</a></li>
+            </ul>
+        </div>
+
+
+        <div class="off-canvas-content" data-off-canvas-content>
+            <header class="header">
+                <div class="grid-container">
+                    <div class="grid-x align-center-middle">
+                        <div class="small-12 medium-2 cell text-center">
+                            <div data-toggle="main-nav">MENU</div>
+                            <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+                        </div>
+                        <div class="small-12 medium-8 cell text-center">
+                            <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/src/assets/images/logo.svg"></a>
+                        </div>
+                        <div class="small-12 medium-auto cell">
+                        </div>
+                    </div>
+                </div>
+            </header>
     
