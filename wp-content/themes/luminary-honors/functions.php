@@ -143,25 +143,18 @@ add_action("widgets_init", "luminary_honors_widgets_init");
  */
 function luminary_honors_public_scripts() {
 
-    // My test styles.
+    /***** Styles *****/
     // Handle, source, dependency, version, media
-    // wp_enqueue_style("main", get_template_directory_uri() . "/src/assets/css/main.css", [], wp_rand(), "all");
-    // wp_enqueue_style("default", get_template_directory_uri() . "/src/assets/css/default.css", [], wp_rand(), "all");
-
-    // MAIN STYLE TO BE RENDERED WHEN PAGES ARE SET UP
     wp_enqueue_style("main", get_template_directory_uri() . "/dist/assets/css/main.css", [], wp_rand(). "all");
 
-    // Scripts.
-    // Handle, source, dependency, version, 
-    // we might need to declare our specific dependencies within here
-    wp_enqueue_script("main", get_template_directory_uri() . "/src/assets/js/main.js", ["jquery"], wp_rand(), true);
+    /***** Scripts *****/
+    wp_enqueue_script("main", get_template_directory_uri() . "/src/assets/js/main.js", [], wp_rand(), true);
+
+    //recommended to take out the jquery that comes with WordPress and use the version we are calling
+    wp_deregister_script("jquery");
+    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), '3.5.1', true);
+    wp_enqueue_script('foundation', 'https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js', array('jquery'), '6.6.3', true);
+    wp_enqueue_script('what-input', 'https://cdnjs.cloudflare.com/ajax/libs/what-input/5.2.10/what-input.js', array(), '5.2.10', true);
+
 }
 add_action("wp_enqueue_scripts", "luminary_honors_public_scripts");
-
-/**
- * Enqueue admin styles and scripts
- */
-function luminary_honors_admin_scripts() {
-
-}
-add_action("wp_enqueue_scripts", "luminary_honors_admin_scripts");
