@@ -5,11 +5,7 @@
  */
 ?>
 
-<!--- Need to see if we still have to put the body here or other div --->
-    <!-- <div class="off-canvas-content" data-off-canvas-content> -->
-
-<body class="flame-body">
-
+<div class="off-canvas-content" data-off-canvas-content>
     <div class="off-canvas position-left" id="main-nav" data-off-canvas data-animate="fade-in fade-out">
         <div>
             <button class="close-button" aria-label="Close alert" type="button" data-close>
@@ -149,13 +145,8 @@
             </div>
         </div>
     </div>
+</div>
 
-</body>
-    
-    <!-- </div> -->
-
-<!--- Saw this on template keeping if we need it later
 <script>
     $(document).foundation();
 </script>
---->

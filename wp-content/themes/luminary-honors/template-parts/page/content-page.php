@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part to displaypage content in page.php
+ * Template part to display page content in page.php
  */
 ?>
 
