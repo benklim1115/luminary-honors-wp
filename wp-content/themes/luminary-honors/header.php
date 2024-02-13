@@ -17,10 +17,8 @@
         <?php wp_head();?>
     </head>
     <!--- change body class if we are on the home/landing page --->
-    <body <?php body_class(is_page('home') ? 'flame-body' : 'body-main'); ?>
+    <body <?php body_class(is_page('home') ? 'flame-body' : 'body-main'); ?>>
     
-
-    <!--- Luminary Honors menu links --->
         <div class="off-canvas position-left" id="main-nav" data-off-canvas data-animate="fade-in fade-out">
             <div>
                 <button class="close-button" aria-label="Close alert" type="button" data-close>
@@ -35,42 +33,48 @@
             </ul>
         </div>
 
-        <!--- We might need logic to show a different header if we are on the home/landing page --->
-        <!---
-        <div class="off-canvas-content" data-off-canvas-content>
-            <header class="header">
-                <div class="grid-container">
-                    <div class="grid-x align-center-middle">
-                        <div class="small-12 medium-2 cell text-center">
-                            <div data-toggle="main-nav">MENU</div>
-                            <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+        <?php 
+            if (is_page("home")) :
+                echo 
+                "
+                <div class='off-canvas-content' data-off-canvas-content>
+                    <header class='header'>
+                        <div class='grid-container'>
+                            <div class='grid-x align-center-middle'>
+                                <div class='small-12 medium-2 cell text-center'>
+                                    <div data-toggle='main-nav'>MENU</div>
+                                    <button class='menu-icon' type='button' data-toggle='main-nav'></button>
+                                </div>
+                                <div class='small-12 medium-8 cell text-center'>
+                                </div>
+                                <div class='small-12 medium-auto cell'>
+                                </div>
+                            </div>
                         </div>
-                        <div class="small-12 medium-8 cell text-center">
-                        </div>
-                        <div class="small-12 medium-auto cell">
-                        </div>
-                    </div>
-
+                    </header>
                 </div>
-            </header>
-        </div>
-        --->
-
-        <div class="off-canvas-content" data-off-canvas-content>
-            <header class="header">
-                <div class="grid-container">
-                    <div class="grid-x align-center-middle">
-                        <div class="small-12 medium-2 cell text-center">
-                            <div data-toggle="main-nav">MENU</div>
-                            <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+                ";
+            else :
+                echo 
+                "
+                <div class='off-canvas-content' data-off-canvas-content>
+                    <header class='header'>
+                        <div class='grid-container'>
+                            <div class='grid-x align-center-middle'>
+                                <div class='small-12 medium-2 cell text-center'>
+                                    <div data-toggle='main-nav'>MENU</div>
+                                    <button class='menu-icon' type='button' data-toggle='main-nav'></button>
+                                </div>
+                                <div class='small-12 medium-8 cell text-center'>
+                                    <a href='/'><img src='" . get_template_directory_uri() . "/src/assets/images/logo.svg' alt='Presidents Luminary Honors logo'></a>
+                                </div>
+                                <div class='small-12 medium-auto cell'>
+                                </div>
+                            </div>
                         </div>
-                        <div class="small-12 medium-8 cell text-center">
-                            <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/src/assets/images/logo.svg" alt="President's Luminary Honors logo"></a>
-                        </div>
-                        <div class="small-12 medium-auto cell">
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div
+                    </header>
+                </div
+                ";
+            endif;
+        ?>
     
