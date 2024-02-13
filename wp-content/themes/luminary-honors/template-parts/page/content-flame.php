@@ -8,40 +8,7 @@
 <!--- Need to see if we still have to put the body here or other div --->
     <!-- <div class="off-canvas-content" data-off-canvas-content> -->
 
-    <body class="flame-body">
-    <div class="off-canvas position-left" id="main-nav" data-off-canvas data-animate="fade-in fade-out">
-        <div>
-            <button class="close-button" aria-label="Close alert" type="button" data-close>
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <ul class="vertical menu align-left nav-text">
-            <li><a href="#">Home</a></li>
-            <li><a href="sponsorship.html">Sponsorships</a></li>
-            <li><a href="honorees.html">Honorees</a></li>
-            <li><a href="#">RSVP</a></li>
-        </ul>
-    </div>
-
-
-    <div class="off-canvas-content" data-off-canvas-content>
-        <header class="header">
-            <div class="grid-container">
-                <div class="grid-x align-center-middle">
-                    <div class="small-12 medium-2 cell text-center">
-                        <div data-toggle="main-nav">MENU</div>
-                        <button class="menu-icon" type="button" data-toggle="main-nav"></button>
-                    </div>
-                    <div class="small-12 medium-8 cell text-center">
-                    </div>
-                    <div class="small-12 medium-auto cell">
-                    </div>
-                </div>
-
-            </div>
-        </header>
-    </div>
-
+    <!-- <body class="flame-body"> -->
     <section class="flame-section">
         <div class="grid-container large match-container">
             <div class="grid-y">
@@ -49,7 +16,7 @@
 
                 </div>
                 <div class="cell small-8 medium-4">
-                    <img class="match" src="../images/match-2.svg">
+                    <img class="match" src="<?php echo get_template_directory_uri(); ?>/src/assets/images/match-2.svg">
 
 
                     <i class="fas fa-arrow-down fa-2x"></i>
@@ -63,7 +30,7 @@
         <div class="grid-container large flame-container">
             <div class="grid-y">
                 <div class="cell small-2 medium-4">
-                    <img class="flame" src="../images/flame.svg">
+                    <img class="flame" src="<?php echo get_template_directory_uri(); ?>/src/assets/images/flame.svg">
 
                 </div>
                 <div class="cell small-8 medium-4">
@@ -163,12 +130,12 @@
 
             </div>
             <div class="cell small-12 medium-3">
-                <img class="flame-crest" src="../images/ut-health-insignia.svg">
+                <img class="flame-crest" src="<?php echo get_template_directory_uri(); ?>/src/assets/images/ut-health-insignia.jpg">
             </div>
         </div>
     </div>
 
-</body>
+<!-- </body> -->
     
     <!-- </div> -->
 
