@@ -34,6 +34,26 @@
             </ul>
         </div>
 
+        <!--- We might need logic to show a different header if we are on the home/landing page --->
+        <!---
+        <div class="off-canvas-content" data-off-canvas-content>
+            <header class="header">
+                <div class="grid-container">
+                    <div class="grid-x align-center-middle">
+                        <div class="small-12 medium-2 cell text-center">
+                            <div data-toggle="main-nav">MENU</div>
+                            <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+                        </div>
+                        <div class="small-12 medium-8 cell text-center">
+                        </div>
+                        <div class="small-12 medium-auto cell">
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+        </div>
+        --->
 
         <div class="off-canvas-content" data-off-canvas-content>
             <header class="header">
