@@ -11,7 +11,7 @@
             <div class="grid-container">
                 <div class="grid-x grid-margin-x align-center-middle">
                     <div class="cell small-12 medium-4 small-order-3 medium-order-1">
-                        <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/src/assets/images/logo.svg" alt="President's Luminary Honors logo"></a>
+                        <a href="/home"><img src="<?php echo get_template_directory_uri(); ?>/src/assets/images/logo.svg" alt="President's Luminary Honors logo"></a>
                     </div>
                     <div class="cell small-12 medium-5 small-order-1 medium-order-2">
                         <ul class="arrow">

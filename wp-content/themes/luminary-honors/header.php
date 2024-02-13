@@ -66,7 +66,7 @@
                                     <button class='menu-icon' type='button' data-toggle='main-nav'></button>
                                 </div>
                                 <div class='small-12 medium-8 cell text-center'>
-                                    <a href='/'><img src='" . get_template_directory_uri() . "/src/assets/images/logo.svg' alt='Presidents Luminary Honors logo'></a>
+                                    <a href='/home'><img src='" . get_template_directory_uri() . "/src/assets/images/logo.svg' alt='Presidents Luminary Honors logo'></a>
                                 </div>
                                 <div class='small-12 medium-auto cell'>
                                 </div>
