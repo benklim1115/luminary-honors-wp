@@ -16,8 +16,17 @@
 
         <?php wp_head();?>
     </head>
-    <!--- we can pass in our class in body_class to override css --->
-    <body class="body-main"<?php body_class($css_class = "body-main");?>>
+    <!--- change body class if we are on the home/landing page --->
+    <?php 
+        if (is_page("home")) :
+            echo "<body class='flame-body'>";
+            body_class("flame-body");
+        else :
+            echo "<body class='body-main'>";
+            body_class("body-main");    
+        endif;    
+    ?>
+    
 
     <!--- Luminary Honors menu links --->
         <div class="off-canvas position-left" id="main-nav" data-off-canvas data-animate="fade-in fade-out">
