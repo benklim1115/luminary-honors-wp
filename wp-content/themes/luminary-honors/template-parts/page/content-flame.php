@@ -17,10 +17,10 @@
             </button>
         </div>
         <ul class="vertical menu align-left nav-text">
-            <li><a href="#">Home</a></li>
-            <li><a href="sponsorship.html">Sponsorships</a></li>
-            <li><a href="honorees.html">Honorees</a></li>
-            <li><a href="#">RSVP</a></li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/sponsorship.html">Sponsorships</a></li>
+            <li><a href="/honorees.html">Honorees</a></li>
+            <li><a href="/rsvp">RSVP</a></li>
         </ul>
     </div>
 
