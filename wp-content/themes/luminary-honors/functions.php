@@ -149,6 +149,7 @@ function luminary_honors_public_scripts() {
 
     /***** Scripts *****/
     wp_enqueue_script("main", get_template_directory_uri() . "/src/assets/js/main.js", [], wp_rand(), true);
+    wp_script_add_data('your-module-script-handle', 'type', 'module');
 
     //recommended to take out the jquery that comes with WordPress and use the version we are calling
     wp_deregister_script("jquery");
