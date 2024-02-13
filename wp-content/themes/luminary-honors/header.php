@@ -17,15 +17,7 @@
         <?php wp_head();?>
     </head>
     <!--- change body class if we are on the home/landing page --->
-    <?php 
-        if (is_page("home")) :
-            echo "<body class='flame-body'>";
-            body_class("flame-body");
-        else :
-            echo "<body class='body-main'>";
-            body_class("body-main");    
-        endif;    
-    ?>
+    <body <?php body_class(is_page('home') ? 'flame-body' : 'body-main'); ?>
     
 
     <!--- Luminary Honors menu links --->
