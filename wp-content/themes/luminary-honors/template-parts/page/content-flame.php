@@ -165,7 +165,7 @@
 
             </div>
             <div class="cell small-12 medium-3">
-                <img class="flame-crest" src="<?php echo get_template_directory_uri(); ?>/src/assets/images/ut-health-insignia.jpg">
+                <img class="flame-crest" src="<?php echo get_template_directory_uri(); ?>/src/assets/images/ut-health-insignia.svg">
             </div>
         </div>
     </div>
