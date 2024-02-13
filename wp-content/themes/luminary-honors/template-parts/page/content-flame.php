@@ -24,26 +24,6 @@
         </ul>
     </div>
 
-    <!-- Commenting out for now
-    <div class="off-canvas-content" data-off-canvas-content>
-        <header class="header">
-            <div class="grid-container">
-                <div class="grid-x align-center-middle">
-                    <div class="small-12 medium-2 cell text-center">
-                        <div data-toggle="main-nav">MENU</div>
-                        <button class="menu-icon" type="button" data-toggle="main-nav"></button>
-                    </div>
-                    <div class="small-12 medium-8 cell text-center">
-                    </div>
-                    <div class="small-12 medium-auto cell">
-                    </div>
-                </div>
-
-            </div>
-        </header>
-    </div>
-    -->
-
     <section class="flame-section">
         <div class="grid-container large match-container">
             <div class="grid-y">
