@@ -8,7 +8,42 @@
 <!--- Need to see if we still have to put the body here or other div --->
     <!-- <div class="off-canvas-content" data-off-canvas-content> -->
 
-    <!-- <body class="flame-body"> -->
+<body class="flame-body">
+
+    <div class="off-canvas position-left" id="main-nav" data-off-canvas data-animate="fade-in fade-out">
+        <div>
+            <button class="close-button" aria-label="Close alert" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <ul class="vertical menu align-left nav-text">
+            <li><a href="#">Home</a></li>
+            <li><a href="sponsorship.html">Sponsorships</a></li>
+            <li><a href="honorees.html">Honorees</a></li>
+            <li><a href="#">RSVP</a></li>
+        </ul>
+    </div>
+
+    <!-- Commenting out for now
+    <div class="off-canvas-content" data-off-canvas-content>
+        <header class="header">
+            <div class="grid-container">
+                <div class="grid-x align-center-middle">
+                    <div class="small-12 medium-2 cell text-center">
+                        <div data-toggle="main-nav">MENU</div>
+                        <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+                    </div>
+                    <div class="small-12 medium-8 cell text-center">
+                    </div>
+                    <div class="small-12 medium-auto cell">
+                    </div>
+                </div>
+
+            </div>
+        </header>
+    </div>
+    -->
+
     <section class="flame-section">
         <div class="grid-container large match-container">
             <div class="grid-y">
@@ -94,7 +129,7 @@
 
             </div>
             <div class="cell small-12 medium-4">
-                <img class="flame-logo" src="../images/logo.svg">
+                <img class="flame-logo" src="<?php echo get_template_directory_uri(); ?>/src/assets/images/logo.svg">
             </div>
             <div class="cell small-12 medium-4">
 
@@ -106,9 +141,9 @@
         <div class="grid-x grid-margin-x">
             <div class="cell small-12 medium-2 gold-border-right">
                 <picture>
-                    <source media="(max-width: 799px)" srcset="../images/date_horizontal.svg">
-                    <source media="(min-width: 800px)" srcset="../images/date.svg">
-                    <img class="flame-date" src="../images/date.svg">
+                    <source media="(max-width: 799px)" srcset="<?php echo get_template_directory_uri(); ?>/src/assets/images/date_horizontal.svg">
+                    <source media="(min-width: 800px)" srcset="<?php echo get_template_directory_uri(); ?>/src/assets/images/date.svg">
+                    <img class="flame-date" src="<?php echo get_template_directory_uri(); ?>/src/assets/images/date.svg">
                 </picture>
 
             </div>
@@ -135,7 +170,7 @@
         </div>
     </div>
 
-<!-- </body> -->
+</body>
     
     <!-- </div> -->
 
