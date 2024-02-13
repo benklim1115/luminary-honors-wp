@@ -160,7 +160,7 @@
                     <li>100 Auditorium Circle, San Antonio, TX 78205</li>
                 </ul>
 
-                <p><a class="button">2023 Honorees</a></p>
+                <p><a href="/honorees" class="button">2023 Honorees</a></p>
 
 
             </div>
