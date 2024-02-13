@@ -5,7 +5,6 @@
  */
 ?>
 
-<!--- Need to see if we still have to put the body here or other div --->
 <div class="off-canvas-content" data-off-canvas-content>
     <main class="grid-container">
         <div class="grid-x grid-margin-x margin-top-2 margin-bottom-2">
