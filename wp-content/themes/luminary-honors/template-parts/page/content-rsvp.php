@@ -10,20 +10,24 @@
     <main class="grid-container">
         <div class="grid-x grid-margin-x margin-top-2 margin-bottom-2">
             <div class="cell small-12 medium-8">
-                <!---
-                <h1 class="color">RSVP</h1>
-                <h2 class="color">Reserve your spot for this special night!</h2>
+                <h2 class="color">Thank you for submitting the form!</h2>
                 <p>
-                    Here is some info on how to fill out the form:<br />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                    officia deserunt mollit anim id est laborum.
+                    Thank you, [Your Full Name], for confirming your attendance at The President's Luminary Honors Event on [Event Date]. <br />
+                    We are delighted that you will be joining us for this special occasion. <br />
+
+                    Here are the details you provided: <br />
+
+                    Name: [Your Full Name] <br />
+                    Email: [Your Email Address] <br />
+                    Phone Number: [Your Phone Number] <br />
+                    Number of Guests: [Number of Guests Attending, if applicable] <br />
+
+                    We look forward to seeing you at the event! If there are any further updates or information, we will reach out to you via the provided email or phone number.
+                    Should you have any questions or need assistance, feel free to contact us. Once again, thank you for RSVPing, and we can't wait to celebrate with you! <br />
+
+                    Best regards,
+                    [Event Organizer]
                 </p>
-                --->
             </div>
         </div>
     </main>
