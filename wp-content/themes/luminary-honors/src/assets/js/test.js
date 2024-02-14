@@ -6,6 +6,16 @@
 const menu = document.querySelector("#main-nav");
 console.log(menu);
 
+
+//close button not the button I want yet
 const closeButton = menu.querySelector("button");
-console.log(closeButton);
-closeButton.addEventListener("click", console.log("Hello there?"));
+closeButton.addEventListener("click", function () {
+    console.log("Close button was clicked!")
+});
+
+//button for the nav menu
+const menuButton = document.querySelector(".menu-icon");
+menuButton.addEventListener("click", function () {
+    console.log("Hamburger button was clicked!")
+});
+
