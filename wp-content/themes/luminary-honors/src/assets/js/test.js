@@ -22,5 +22,5 @@ const toggleFunction = menuButton.getAttribute("data-toggle");
 if (typeof window[toggleFunction] === "function") {
     menuButton.addEventListener("click", window[toggleFunction]);
 } else {
-    console.error(`Function ${toggleFunction} not found or not a function.`);
+    console.warn(`Function ${toggleFunction} not found or not a function.`);
 }
