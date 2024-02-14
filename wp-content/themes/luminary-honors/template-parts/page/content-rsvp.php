@@ -5,12 +5,14 @@
  */
 ?>
 
-<!--- Keeping this here to keep formatting correct after form submission --->
+<!--- Display after form submission --->
+<!--- Hardcoding into formidable action, there is also an email option there too
+
 <div class="off-canvas-content" data-off-canvas-content>
     <main class="grid-container">
         <div class="grid-x grid-margin-x margin-top-2 margin-bottom-2">
-            <div class="cell small-12 medium-8">
-                <h2 class="color">Thank you for submitting the form!</h2>
+            <div class="cell small-6 medium-6">
+                <h2>Thank you for submitting the form!</h2>
                 <p>
                     Thank you, [Your Full Name], for confirming your attendance at The President's Luminary Honors Event on [Event Date]. <br />
                     We are delighted that you will be joining us for this special occasion. <br />
@@ -32,6 +34,7 @@
         </div>
     </main>
 </div>
+--->
 
 <script>
     $(document).foundation();
