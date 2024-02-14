@@ -46,3 +46,7 @@
         ?>
     </div>
 </section>
+
+<script>
+    $(document).foundation();
+</script>
