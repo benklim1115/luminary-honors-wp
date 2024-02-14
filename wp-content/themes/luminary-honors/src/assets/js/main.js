@@ -1,12 +1,5 @@
 //public script
 
-
-    // alert("Hello there? is this working?");
-    //can we register that we are pressing this?
-    const menu = document.querySelector("#main-nav");
-    console.log(menu)
-    // menu.querySelector("click", console.log("I am clicked!"));
-
 //testing if js is working within site
 document.addEventListener('DOMContentLoaded', function() {
     
