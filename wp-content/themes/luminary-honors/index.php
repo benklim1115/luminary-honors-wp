@@ -8,6 +8,8 @@ get_header();
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
         <?php 
+        // if we want the index page to be the landing page/flame we can add that here
+        // just need to render styles correctly, check header
             if (have_posts()) :
                 while (have_posts()) :
                     the_post();
