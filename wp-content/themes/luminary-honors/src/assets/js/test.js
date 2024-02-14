@@ -2,7 +2,6 @@
 
 // alert("Hello there? is this working?");
 //can we register that we are pressing this?
-//ok heres out hamburger menu
 const menu = document.querySelector("#main-nav");
 console.log(menu);
 
@@ -14,8 +13,14 @@ closeButton.addEventListener("click", function () {
 });
 
 //button for the nav menu
+//ok this is the button i want
+//test the data-toggle attribute
 const menuButton = document.querySelector(".menu-icon");
-menuButton.addEventListener("click", function () {
-    console.log("Hamburger button was clicked!")
-});
+const toggleFunction = menuButton.getAttribute("data-toggle");
 
+//check if we can run the toggle function else console.error the reason why we can't
+if (typeof window[toggleFunction] === "function") {
+    menuButton.addEventListener("click", window[toggleFunction]);
+} else {
+    console.error(`Function ${toggleFunction} not found or not a function.`);
+}
