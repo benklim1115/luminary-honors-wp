@@ -6,11 +6,11 @@
 ?>
 
 <!--- Display after form submission --->
-<!--- Hardcoding into formidable action, there is also an email option there too
 
+<!--- Hardcoding into formidable action after form submission
 <div class="off-canvas-content" data-off-canvas-content>
     <main class="grid-container">
-        <div class="grid-x grid-margin-x margin-top-2 margin-bottom-2">
+        <div class="grid-x grid-margin-x margin-top-2 margin-bottom-2 align-center">
             <div class="cell small-6 medium-6">
                 <h2>Thank you for submitting the form!</h2>
                 <p>
