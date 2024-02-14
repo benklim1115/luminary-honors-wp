@@ -5,6 +5,7 @@
  */
 ?>
 
+<!--- Removing from here, hardcoding into editor
 <div class="off-canvas-content" data-off-canvas-content>
     <main class="grid-container">
         <div class="grid-x grid-margin-x margin-top-2 margin-bottom-2">
@@ -25,6 +26,7 @@
         </div>
     </main>
 </div>
+--->
 
 <script>
     $(document).foundation();
