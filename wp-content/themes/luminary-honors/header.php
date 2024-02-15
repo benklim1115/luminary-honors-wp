@@ -18,25 +18,24 @@
     </head>
     <!--- change body class if we are on the home/landing page --->
     <body <?php body_class(is_page('home') ? 'flame-body' : 'body-main'); ?>>
-    
-        <div class="off-canvas position-left" id="main-nav" data-off-canvas data-animate="fade-in fade-out">
-            <div>
-                <button class="close-button" aria-label="Close alert" type="button" data-close>
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <ul class="vertical menu align-left nav-text">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/sponsorships">Sponsorships</a></li>
-                <li><a href="/honorees">Honorees</a></li>
-                <li><a href="/rsvp">RSVP</a></li>
-            </ul>
-        </div>
 
         <?php 
             if (is_page("home")) :
                 echo 
                 "
+                <div class='off-canvas position-left' id='main-nav' data-off-canvas data-animate='fade-in fade-out'>
+                    <div>
+                        <button class='close-button' aria-label='Close alert' type='button' data-close>
+                            <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>
+                    <ul class='vertical menu align-left nav-text'>
+                        <li><a href='/home'>Home</a></li>
+                        <li><a href='/sponsorships'>Sponsorships</a></li>
+                        <li><a href='/honorees'>Honorees</a></li>
+                        <li><a href='/rsvp'>RSVP</a></li>
+                    </ul>
+                </div>
                 <div class='off-canvas-content' data-off-canvas-content>
                     <header class='header'>
                         <div class='grid-container'>
@@ -57,6 +56,19 @@
             else :
                 echo 
                 "
+                <div class='off-canvas position-left' id='main-nav' data-off-canvas data-animate='fade-in fade-out'>
+                    <div>
+                        <button class='close-button' aria-label='Close alert' type='button' data-close>
+                            <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>
+                    <ul class='vertical menu align-left nav-text'>
+                        <li><a href='/home'>Home</a></li>
+                        <li><a href='/sponsorships'>Sponsorships</a></li>
+                        <li><a href='/honorees'>Honorees</a></li>
+                        <li><a href='/rsvp'>RSVP</a></li>
+                    </ul>
+                </div>
                 <div class='off-canvas-content' data-off-canvas-content>
                     <header class='header'>
                         <div class='grid-container'>
