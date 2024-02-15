@@ -3,6 +3,7 @@
  * Custom page for honorees
  * https://luminaryhonors.tastawerk.net/sponsorship.html
  */
+get_header();
 ?>
 
 <main class="grid-container">

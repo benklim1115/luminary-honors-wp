@@ -3,6 +3,7 @@
  * Custom page for landing page/flame?
  * https://luminaryhonors.tastawerk.net/sponsorship.html
  */
+get_header();
 ?>
 
 <section class="flame-section">
