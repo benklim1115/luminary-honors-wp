@@ -79,7 +79,3 @@
         </div>
     </div>
 </main>
-
-<script>
-    $(document).foundation();
-</script>
