@@ -3,7 +3,6 @@
  * Custom page for rsvps
  * https://luminaryhonors.tastawerk.net/sponsorship.html
  */
-get_header();
 ?>
 
 <!--- Display after form submission --->
