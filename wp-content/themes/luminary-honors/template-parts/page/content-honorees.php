@@ -1,7 +1,14 @@
 <?php
 /**
  * Custom page for honorees
- * https://luminaryhonors.tastawerk.net/sponsorship.html
+ * 
+ * HONOREES
+ * 
+ * [luminary-honors-local.lndo].site/honorees/
+ * [] - replace with the name of your site
+ * 
+ * For example: luminary-honors-production.lndo.site/honorees/
+ * Make a page on wordpress for honorees so that it matches the slug to work
  */
 ?>
 
@@ -79,3 +86,7 @@
         </div>
     </div>
 </main>
+
+<script>
+    $(document).foundation();
+</script>

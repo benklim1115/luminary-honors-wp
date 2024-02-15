@@ -1,13 +1,21 @@
 <?php
 /**
- * Custom page for rsvps
- * https://luminaryhonors.tastawerk.net/sponsorship.html
+ * Custom page for rsvp
+ * 
+ * RSVP
+ * 
+ *  * [luminary-honors-local].lndo.site/rsvp/
+ * [] - replace with the name of your site
+ * 
+ * For example: luminary-honors-local.lndo.site/rsvp/
+ * Make a page on wordpress so that rsvp matches the slug to work
  */
 ?>
 
 <!--- Display after form submission --->
+<!--- TODO: echo out information? we probably should email it instead?--->
 
-<!--- Hardcoding into formidable action after form submission
+<!--- Hardcoding into formidable form action after form submission
 <main class="grid-container">
     <div class="grid-x grid-margin-x margin-top-2 margin-bottom-2 align-center">
         <div class="cell small-6 medium-6">
@@ -33,3 +41,7 @@
     </div>
 </main>
 --->
+
+<script>
+    $(document).foundation();
+</script>

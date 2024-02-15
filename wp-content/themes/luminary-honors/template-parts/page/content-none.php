@@ -1,6 +1,14 @@
 <?php
 /**
- * Template part for displaying a message that posts cannot be found
+ *  * Template part for displaying a message that posts cannot be found
+ * Default page none, may want to reconsider taking this out, we're currently reaching a 404.php page
+ * 
+ * NONE
+ * 
+ * /**
+ * Custom page for none
+ * 
+ * Not utilized currently but may need it in the future
  */
 ?>
 

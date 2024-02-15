@@ -1,10 +1,16 @@
 <?php
 /**
  * Custom page for sponsorships
- * https://luminaryhonors.tastawerk.net/sponsorship.html
+ * 
+ * SPONSORSHIPS
+ * 
+ * * [luminary-honors-local].lndo.site/sponsorships/
+ * [] - replace with the name of your site
+ * 
+ * For example: luminary-honors-local.lndo.site/sponsorships/
+ * Make a page on wordpress so that sponsorships matches the slug to work
  */
 ?>
-
 
 <main class="grid-container">
     <div class="grid-x grid-margin-x margin-top-2 margin-bottom-2">
@@ -137,3 +143,6 @@
     </div>
 </main>
 
+<script>
+    $(document).foundation();
+</script>

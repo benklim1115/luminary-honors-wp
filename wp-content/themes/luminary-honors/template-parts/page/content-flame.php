@@ -1,7 +1,14 @@
 <?php
 /**
- * Custom page for landing page/flame?
- * https://luminaryhonors.tastawerk.net/sponsorship.html
+ * Custom page for home or flame/landing page
+ * 
+ * HOME
+ * 
+ *  * [luminary-honors-local].lndo.site/home/
+ * [] - replace with the name of your site
+ * 
+ * For example: luminary-honors-local.lndo.site/home/
+ * Make a page on wordpress so that home matches the slug to work
  */
 ?>
 
@@ -130,3 +137,7 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).foundation();
+</script>
