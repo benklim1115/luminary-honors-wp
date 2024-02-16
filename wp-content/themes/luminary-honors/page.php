@@ -34,6 +34,7 @@ get_header();
 
                 // Default case, load the generic content page
                 // We can have them build custom pages this way if they don't use the slugs
+                // This is causing the content to duplicate but I do need it
                 else :
                     get_template_part("template-parts/page/content", "page");
 
