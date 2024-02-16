@@ -33,7 +33,7 @@ get_header();
                     get_template_part("template-parts/page/content", "rsvp");
 
                 // Default case, load the generic content page
-                // maybe this should redirect to home or 404?
+                // We can have them build custom pages this way if they don't use the slugs
                 else :
                     get_template_part("template-parts/page/content", "page");
 

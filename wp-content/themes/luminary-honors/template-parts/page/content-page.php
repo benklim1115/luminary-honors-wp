@@ -7,6 +7,8 @@
 <!--- NEED TO EDIT THIS --->
 <!--- If we want blank template pages to show up it does so here --->
 
+
+<!--- Content is showing up twice for every element added, check into this --->
 <article id="post-<?php the_ID();?>">
     <?php the_title("<h1 class='entry-title'>", "</h1>");?>
 
