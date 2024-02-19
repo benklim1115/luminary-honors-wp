@@ -93,8 +93,6 @@
             endif;
         ?>
 
-<script>
-    $(document).foundation();
-</script>
+
 
     
