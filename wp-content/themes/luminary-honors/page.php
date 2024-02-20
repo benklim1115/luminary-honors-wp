@@ -8,7 +8,7 @@ get_header();
 
 <!--- Will need to plug in Hunter"s pages here --->
 
-<main id="main" class="site-main">
+<main id="main-content" class="grid-container">
 
     <?php 
         // Check if we are on the / page
