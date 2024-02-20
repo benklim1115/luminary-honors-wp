@@ -13,8 +13,12 @@ get_header();
         <!--- loop to print out the page --->
         <?php 
             while (have_posts()) :
+                //this is where the content is duplicating, we defer to content-page.php instead
+                /*
                 the_post();
                 the_content();
+                */
+
                 // Check if we are on the / page
                 // Consider refactoring to change logic for home page to search for the root /
                 // Changing the root of the project in Settings -> Reading in wp-admin works for now
@@ -33,9 +37,7 @@ get_header();
                 elseif (is_page("rsvp")) :
                     get_template_part("template-parts/page/content", "rsvp");
 
-                // Default case, load the generic content page
-                // We can have them build custom pages this way if they don't use the slugs
-                // This is causing the content to duplicate but I do need it
+                // Not on any of the slugs? Render default template for page    
                 else :
                     get_template_part("template-parts/page/content", "page");
 
