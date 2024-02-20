@@ -37,7 +37,7 @@ get_header();
 
        //loop to print out the page
         while (have_posts()) :
-            echo "<p>Where is this showing up?</p>";
+            echo "<p><b>Where is this showing up?</b></p>";
             the_post();
             the_content();  
             //if we have comments show them

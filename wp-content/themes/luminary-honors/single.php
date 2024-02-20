@@ -8,27 +8,20 @@ echo get_post_format();
 get_header();
 ?>
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main">
-        <?php 
-            while(have_posts()) :
-                the_post();
-                //single post content
-                // the_content();
-                get_template_part("template-parts/post/content", get_post_format());
-            endwhile;
-
-            //If we have comments, show template
-            if (comments_open() || get_comments_number()) :
-                comments_template();
-            endif;
-        ?>
-    </main>
-    <!--- Sidebar content -->
-    <?php
-        get_sidebar();
-    ?>
+<div class="main-container">
+    <div class="main-grid">
+        <main class="main-content">
+            <?php while ( have_posts() ) : the_post(); ?>
+            <?php if ( function_exists("yoast_breadcrumb") ) { 
+					yoast_breadcrumb( "<p id='breadcrumbs'>","</p>" ); 
+				}
+			?>
+            <?php get_template_part("template-parts/posts/content", get_post_format()); ?>
+            <?php endwhile; ?>
+        </main>
+    </div>
 </div>
 
 <?php
 get_footer();
+?>
