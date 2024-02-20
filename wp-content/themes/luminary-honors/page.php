@@ -13,11 +13,8 @@ get_header();
         <!--- loop to print out the page --->
         <?php 
             while (have_posts()) :
-                //this is where the content is duplicating, we defer to content-page.php instead
-                /*
                 the_post();
                 the_content();
-                */
 
                 // Check if we are on the / page
                 // Consider refactoring to change logic for home page to search for the root /
