@@ -9,8 +9,8 @@
 
 
 <!--- Content is showing up twice for every element added, check into this --->
-<article id="post-<?php the_ID();?>">
-    <?php the_title("<h1 class='entry-title'>", "</h1>");?>
+<main class="grid-container">
+    <?php the_title("<h1 class='color'>", "</h1>");?>
 
     <?php
         //page thumbnail
@@ -31,4 +31,4 @@
         ?>
     </div>
 
-</article>
+</main>

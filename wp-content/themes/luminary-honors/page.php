@@ -13,6 +13,7 @@ get_header();
         <!--- loop to print out the page --->
         <?php 
             while (have_posts()) :
+                echo "<p>Where is this showing up?</p>";
                 the_post();
                 the_content();
 
