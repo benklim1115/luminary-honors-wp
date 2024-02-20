@@ -20,6 +20,8 @@
         <?php wp_head();?>
     </head>
     <!--- change body class if we are on the home/landing page --->
+    <!--- Consider refactoring to change logic for home page to search for the root /--->
+    <!--- Changing the root of the project in Settings -> Reading in wp-admin works for now --->
     <body <?php body_class(is_page('home') ? 'flame-body' : 'body-main'); ?>>
 
         <?php 
@@ -33,7 +35,7 @@
                         </button>
                     </div>
                     <ul class='vertical menu align-left nav-text'>
-                        <li><a href='/home'>Home</a></li>
+                        <li><a href='/'>Home</a></li>
                         <li><a href='/sponsorships'>Sponsorships</a></li>
                         <li><a href='/honorees'>Honorees</a></li>
                         <li><a href='/rsvp'>RSVP</a></li>

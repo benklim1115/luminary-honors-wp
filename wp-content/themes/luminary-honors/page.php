@@ -16,7 +16,8 @@ get_header();
                 the_post();
                 the_content();
                 // Check if we are on the / page
-                // /landing or /flame?
+                // Consider refactoring to change logic for home page to search for the root /
+                // Changing the root of the project in Settings -> Reading in wp-admin works for now
                 if (is_page("home")) :
                     get_template_part("template-parts/page/content", "flame");
 
