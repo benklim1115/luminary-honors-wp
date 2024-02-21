@@ -12,6 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <main class="grid-container">
         <?php the_title("<h1 class='color'>", "</h1>");?>
+        <?php echo "Hello from content-page";?>
 
         <?php
             //page thumbnail
