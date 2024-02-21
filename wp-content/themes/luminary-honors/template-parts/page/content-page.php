@@ -9,26 +9,28 @@
 
 
 <!--- Content is showing up twice for every element added, check into this --->
-<main class="grid-container">
-    <?php the_title("<h1 class='color'>", "</h1>");?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <main class="grid-container">
+        <?php the_title("<h1 class='color'>", "</h1>");?>
 
-    <?php
-        //page thumbnail
-        if (has_post_thumbnail()) :
-            the_post_thumbnail("full");
-        endif; 
-    ?>
-
-    <!--- Content --->
-    <div class="entry-content">
-        <?php 
-            the_content();
-
-            wp_link_pages( array(
-                "before" => "<div class='page-links'>" . esc_html__("Pages:", "luminary-honors"),
-                "after" => "</div>",
-            ));
+        <?php
+            //page thumbnail
+            if (has_post_thumbnail()) :
+                the_post_thumbnail("full");
+            endif; 
         ?>
-    </div>
 
-</main>
+        <!--- Content --->
+        <div class="entry-content">
+            <?php 
+                the_content();
+
+                wp_link_pages( array(
+                    "before" => "<div class='page-links'>" . esc_html__("Pages:", "luminary-honors"),
+                    "after" => "</div>",
+                ));
+            ?>
+        </div>
+
+    </main>
+</article>
