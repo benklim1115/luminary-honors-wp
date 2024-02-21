@@ -12,6 +12,7 @@
  */
 ?>
 
+<!--- NOT CURRENTLY BEING USED --->
 <main class="grid-container">
     <div class="grid-x grid-margin-x margin-top-2 margin-bottom-2">
         <div class="cell small-12 medium-8">

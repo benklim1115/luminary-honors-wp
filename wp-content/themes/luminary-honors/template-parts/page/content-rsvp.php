@@ -12,7 +12,7 @@
  */
 ?>
 
-<!--- Display after form submission --->
+<!--- NOT CURRENTLY BEING USED --->
 <!--- TODO: echo out information? we probably should email it instead?--->
 
 <!--- Hardcoding into formidable form action after form submission
