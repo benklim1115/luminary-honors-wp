@@ -36,5 +36,10 @@ $add_breadcrumbs = get_post_meta( $post->ID, 'add_breadcrumbs', true );
 <main id="main-content" class="grid-container">
     <?php the_content(); ?>
 </main>
+
+<script>
+    $(document).foundation();
+</script>
+
 <?php
 get_footer();
