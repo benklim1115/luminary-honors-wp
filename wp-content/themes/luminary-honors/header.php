@@ -22,10 +22,10 @@
     <!--- change body class if we are on the home/landing page --->
     <!--- Consider refactoring to change logic for home page to search for the root /--->
     <!--- Changing the root of the project in Settings -> Reading in wp-admin works for now --->
-    <body <?php body_class(is_page('home') ? 'flame-body' : 'body-main'); ?>>
+    <body <?php body_class(is_front_page() ? 'flame-body' : 'body-main'); ?>>
 
         <?php 
-            if (is_page("home")) :
+            if (is_front_page()) :
                 echo 
                 "
                 <div class='off-canvas position-left' id='main-nav' data-off-canvas data-animate='fade-in fade-out'>
