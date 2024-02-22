@@ -22,7 +22,7 @@
     <!--- change body class if we are on the home/landing page --->
     <!--- Consider refactoring to change logic for home page to search for the root /--->
     <!--- Changing the root of the project in Settings -> Reading in wp-admin works for now --->
-    <body <?php body_class(is_front_page() ? 'flame-body' : 'body-main'); ?>>
+    <body <?php body_class(is_front_page() ? "flame-body" : "body-main"); ?>>
 
         <?php 
             if (is_front_page()) :
@@ -35,10 +35,10 @@
                         </button>
                     </div>
                     <ul class='vertical menu align-left nav-text'>
-                        <li><a href='/'>Home</a></li>
-                        <li><a href='/sponsorships'>Sponsorships</a></li>
-                        <li><a href='/honorees'>Honorees</a></li>
-                        <li><a href='/rsvp'>RSVP</a></li>
+                        <li><a href='/luminary-honors/'>Home</a></li>
+                        <li><a href='/luminary-honors/sponsorships'>Sponsorships</a></li>
+                        <li><a href='/luminary-honors/honorees'>Honorees</a></li>
+                        <li><a href='/luminary-honors/rsvp'>RSVP</a></li>
                     </ul>
                 </div>
                 <div class='off-canvas-content' data-off-canvas-content>
@@ -68,10 +68,10 @@
                         </button>
                     </div>
                     <ul class='vertical menu align-left nav-text'>
-                        <li><a href='/home'>Home</a></li>
-                        <li><a href='/sponsorships'>Sponsorships</a></li>
-                        <li><a href='/honorees'>Honorees</a></li>
-                        <li><a href='/rsvp'>RSVP</a></li>
+                        <li><a href='/luminary-honors/'>Home</a></li>
+                        <li><a href='/luminary-honors/sponsorships'>Sponsorships</a></li>
+                        <li><a href='/luminary-honors/honorees'>Honorees</a></li>
+                        <li><a href='/luminary-honors/rsvp'>RSVP</a></li>
                     </ul>
                 </div>
                 <div class='off-canvas-content' data-off-canvas-content>
