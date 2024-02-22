@@ -12,10 +12,10 @@ $add_breadcrumbs = get_post_meta( $post->ID, 'add_breadcrumbs', true );
     <?php while ( have_posts() ) : the_post(); ?>
         <?php 
             //if we are home render the home/flame template page
-            if(is_page("home")) :
+            if(is_front_page()) :
                 get_template_part("template-parts/page/content", "flame");
             //if we are NOT home, render the layout for a base template page
-            elseif(!is_page("home")) :
+            else :
                 echo "
                     <main class='grid-container'>
                         <div class='grid-x grid-margin-x margin-top-2 margin-bottom-2'>
