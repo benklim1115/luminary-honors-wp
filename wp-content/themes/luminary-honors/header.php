@@ -19,9 +19,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.2.10/what-input.js" integrity="sha512-w6w/tdJ0DVnvEwW1HtpcriyI+Pzk/PQlFQAZGW0rfs0rrP1H5Y9tvem6lG0JopxdfP3bdfJ/YxLL3ISiudn3Og==" crossorigin="anonymous"></script>
         <?php wp_head();?>
     </head>
-    <!--- change body class if we are on the home/landing page --->
-    <!--- Consider refactoring to change logic for home page to search for the root /--->
-    <!--- Changing the root of the project in Settings -> Reading in wp-admin works for now --->
     <body <?php body_class(is_front_page() ? "flame-body" : "body-main"); ?>>
 
         <?php 
@@ -33,13 +30,14 @@
                         <button class='close-button' aria-label='Close alert' type='button' data-close>
                             <span aria-hidden='true'>&times;</span>
                         </button>
-                    </div>
-                    <ul class='vertical menu align-left nav-text'>
-                        <li><a href='/luminary-honors/'>Home</a></li>
-                        <li><a href='/luminary-honors/sponsorships'>Sponsorships</a></li>
-                        <li><a href='/luminary-honors/honorees'>Honorees</a></li>
-                        <li><a href='/luminary-honors/rsvp'>RSVP</a></li>
-                    </ul>
+                    </div>";
+                    wp_nav_menu( array(
+                        'theme_location' => 'main-nav',
+                        'container' => 'ul',
+                        'menu_class'=> 'vertical menu align-left nav-text'
+                    ) );
+                echo
+                "
                 </div>
                 <div class='off-canvas-content' data-off-canvas-content>
                     <header class='header'>
@@ -66,13 +64,14 @@
                         <button class='close-button' aria-label='Close alert' type='button' data-close>
                             <span aria-hidden='true'>&times;</span>
                         </button>
-                    </div>
-                    <ul class='vertical menu align-left nav-text'>
-                        <li><a href='/luminary-honors/'>Home</a></li>
-                        <li><a href='/luminary-honors/sponsorships'>Sponsorships</a></li>
-                        <li><a href='/luminary-honors/honorees'>Honorees</a></li>
-                        <li><a href='/luminary-honors/rsvp'>RSVP</a></li>
-                    </ul>
+                    </div>";
+                    wp_nav_menu( array(
+                        'theme_location' => 'main-nav',
+                        'container' => 'ul',
+                        'menu_class'=> 'vertical menu align-left nav-text'
+                    ) );
+                echo
+                "
                 </div>
                 <div class='off-canvas-content' data-off-canvas-content>
                     <header class='header'>

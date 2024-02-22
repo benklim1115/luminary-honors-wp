@@ -162,3 +162,15 @@ function luminary_honors_public_scripts() {
 
 }
 add_action("wp_enqueue_scripts", "luminary_honors_public_scripts");
+
+
+//Main menu setup
+function register_theme_menus() {
+    register_nav_menus(
+      array(
+        'main-nav' => __( 'Main Menu' ),
+        'extra-menu' => __( 'Extra Menu' )
+        )
+    );
+}
+add_action( 'init', 'register_theme_menus' );
