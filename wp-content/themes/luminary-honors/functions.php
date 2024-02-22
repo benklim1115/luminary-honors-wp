@@ -156,9 +156,9 @@ function luminary_honors_public_scripts() {
     //recommended to take out the jquery that comes with WordPress and use the version we are calling
     //not 100% if we need to have any of these 4 directly below
     wp_deregister_script("jquery");
-    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), '3.5.1', true);
-    wp_enqueue_script('foundation', 'https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js', array('jquery'), '6.6.3', true);
-    wp_enqueue_script('what-input', 'https://cdnjs.cloudflare.com/ajax/libs/what-input/5.2.10/what-input.js', array(), '5.2.10', true);
+    wp_enqueue_script("jquery", "https://code.jquery.com/jquery-3.5.1.min.js", array(), "3.5.1", true);
+    wp_enqueue_script("foundation", "https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js", array("jquery"), '6.6.3', true);
+    wp_enqueue_script("what-input", "https://cdnjs.cloudflare.com/ajax/libs/what-input/5.2.10/what-input.js", array(), "5.2.10", true);
 
 }
 add_action("wp_enqueue_scripts", "luminary_honors_public_scripts");
@@ -168,9 +168,9 @@ add_action("wp_enqueue_scripts", "luminary_honors_public_scripts");
 function register_theme_menus() {
     register_nav_menus(
       array(
-        'main-nav' => __( 'Main Menu' ),
-        'extra-menu' => __( 'Extra Menu' )
+        "main-nav" => __("Main Menu", "luminary-honors"),
+        "extra-menu" => __("Extra Menu", "luminary-honors")
         )
     );
 }
-add_action( 'init', 'register_theme_menus' );
+add_action( "init", "register_theme_menus" );
