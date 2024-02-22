@@ -19,7 +19,3 @@
         ?>
     </footer>
 </article>
-
-<script>
-    $(document).foundation();
-</script>
