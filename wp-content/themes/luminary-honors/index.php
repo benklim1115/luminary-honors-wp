@@ -13,9 +13,7 @@ get_header();
         // Changing the root of the project in Settings -> Reading in wp-admin works for now
             if (have_posts()) :
                 while (have_posts()) :
-                    the_post();
-                    get_template_part("template-parts/post/content", get_post_format());
-                    // get_template_part("template-parts/page/content", "flame");
+                    get_template_part("template-parts/page/content", "flame");
                 endwhile;
             
             
