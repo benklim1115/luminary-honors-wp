@@ -25,9 +25,9 @@
             if (is_front_page()) :
                 echo 
                 "
-                <div class='off-canvas position-left' id='main-nav' data-off-canvas data-animate='fade-in fade-out'>
+                <div class='off-canvas position-left is-transition-push is-closed' id='main-nav' data-off-canvas='09258w-off-canvas' data-animate='fade-in fade-out' aria-hidden='true'>
                     <div>
-                        <button class='close-button' aria-label='Close alert' type='button' data-close>
+                        <button class='close-button' aria-label='Close alert' type='button' data-close=''>
                             <span aria-hidden='true'>&times;</span>
                         </button>
                     </div>";
@@ -39,13 +39,13 @@
                 echo
                 "
                 </div>
-                <div class='off-canvas-content' data-off-canvas-content>
+                <div class='off-canvas-content' data-off-canvas-content=''>
                     <header class='header'>
                         <div class='grid-container'>
                             <div class='grid-x align-center-middle'>
                                 <div class='small-12 medium-2 cell text-center'>
-                                    <div data-toggle='main-nav'>MENU</div>
-                                    <button class='menu-icon' type='button' data-toggle='main-nav'></button>
+                                    <div data-toggle='main-nav' aria-expanded='false' aria-controls='main-nav'>MENU</div>
+                                    <button class='menu-icon' type='button' data-toggle='main-nav' aria-expanded='false' aria-controls='main-nav'></button>
                                 </div>
                                 <div class='small-12 medium-8 cell text-center'>
                                 </div>
@@ -59,9 +59,9 @@
             else :
                 echo 
                 "
-                <div class='off-canvas position-left' id='main-nav' data-off-canvas data-animate='fade-in fade-out'>
+                <div class='off-canvas position-left is-transition-push is-closed' id='main-nav' data-off-canvas='09258w-off-canvas' data-animate='fade-in fade-out' aria-hidden='true'>
                     <div>
-                        <button class='close-button' aria-label='Close alert' type='button' data-close>
+                        <button class='close-button' aria-label='Close alert' type='button' data-close=''>
                             <span aria-hidden='true'>&times;</span>
                         </button>
                     </div>";
@@ -73,13 +73,13 @@
                 echo
                 "
                 </div>
-                <div class='off-canvas-content' data-off-canvas-content>
+                <div class='off-canvas-content' data-off-canvas-content=''>
                     <header class='header'>
                         <div class='grid-container'>
                             <div class='grid-x align-center-middle'>
                                 <div class='small-12 medium-2 cell text-center'>
-                                    <div data-toggle='main-nav'>MENU</div>
-                                    <button class='menu-icon' type='button' data-toggle='main-nav'></button>
+                                    <div data-toggle='main-nav aria-expanded='false' aria-controls='main-nav'>MENU</div>
+                                    <button class='menu-icon' type='button' data-toggle='main-nav' aria-expanded='false' aria-controls='main-nav'></button>
                                 </div>
                                 <div class='small-12 medium-8 cell text-center'>
                                     <a href='/luminary-honors/'><img src='" . get_template_directory_uri() . "/src/assets/images/logo.svg' alt='Presidents Luminary Honors logo'></a>
