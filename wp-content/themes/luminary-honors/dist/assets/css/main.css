@@ -18481,4 +18481,9 @@ ul.nav-text li a:hover::after {
   font-size: 62px;
 }
 
+.luminary-footer .grid-container {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
