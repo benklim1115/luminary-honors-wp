@@ -172,5 +172,7 @@ function register_theme_menus() {
         "extra-menu" => __("Extra Menu", "luminary-honors")
         )
     );
+    require_once('library/luminary-honors/customizer/logo-upload.php' );
+    require_once('library/luminary-honors/customizer/customizer-tweaks.php' );
 }
 add_action( "init", "register_theme_menus" );
