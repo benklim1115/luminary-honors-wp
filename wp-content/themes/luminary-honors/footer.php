@@ -4,8 +4,6 @@
  **/
 ?>
 
-    <?php wp_footer();?>
-
         <!--- Footer menu for site --->
         <footer>
             <div class="grid-container">
@@ -32,7 +30,7 @@
                 </div>
             </div>
         </footer>
-
-        </div>      
+    
+    <?php wp_footer();?>
     </body>
 </html>
