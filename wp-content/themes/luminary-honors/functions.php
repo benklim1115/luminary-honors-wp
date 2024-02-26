@@ -144,8 +144,8 @@ add_action("widgets_init", "luminary_honors_widgets_init");
 function luminary_honors_public_scripts() {
 
     /***** Styles *****/
-    // Handle, source, dependency, version, media
-    wp_enqueue_style("main", get_template_directory_uri() . "/dist/assets/css/main.css", [], wp_rand(). "all");
+    wp_enqueue_style("main", get_template_directory_uri() . "/dist/assets/css/main.css", [], wp_rand(), "all");
+    wp_enqueue_style("overrides", get_template_directory_uri() . "/dist/assets/css/overrides.css", [], wp_rand(), 'all');
 
     /***** Scripts *****/
     wp_enqueue_script("main", get_template_directory_uri() . "/src/assets/js/main.js", [], wp_rand(), true);
@@ -153,8 +153,6 @@ function luminary_honors_public_scripts() {
 
     wp_enqueue_script("test", get_template_directory_uri() . "/src/assets/js/test.js", [], wp_rand(), true);
 
-    //recommended to take out the jquery that comes with WordPress and use the version we are calling
-    //not 100% if we need to have any of these 4 directly below
     wp_deregister_script("jquery");
     wp_enqueue_script("jquery", "https://code.jquery.com/jquery-3.5.1.min.js", array(), "3.5.1", true);
     wp_enqueue_script("foundation", "https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js", array("jquery"), '6.6.3', true);
