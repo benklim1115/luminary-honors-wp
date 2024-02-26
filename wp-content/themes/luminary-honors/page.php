@@ -12,7 +12,7 @@
 
 get_header(); ?>
 	<div class="page-title grid-container">
-        <div class="grid-x grid-padding-x">
+        <div class="grid-x grid-padding-x margin-top-2 margin-bottom-2">
             <div class="cell">
 				<?php while ( have_posts() ) : the_post(); ?>
                     <?php 
