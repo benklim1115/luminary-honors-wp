@@ -42,7 +42,8 @@ get_header(); ?>
 	</div>
 	
 	<main class="grid-container">
-         	<?php the_content();?>
+        <?php the_content();?>
+        <?php get_footer(); ?>
     </main>
 </div> <!--This is the ending div for the off-canvas div that starts in header.php -->
 
@@ -51,5 +52,3 @@ get_header(); ?>
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.2.10/what-input.js" integrity="sha512-w6w/tdJ0DVnvEwW1HtpcriyI+Pzk/PQlFQAZGW0rfs0rrP1H5Y9tvem6lG0JopxdfP3bdfJ/YxLL3ISiudn3Og==" crossorigin="anonymous"></script>
 <script>$(document).foundation();</script>		
-
-<?php get_footer(); ?>
