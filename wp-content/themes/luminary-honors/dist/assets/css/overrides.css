@@ -1,9 +1,0 @@
-/* Fix wordpress theme */
-.menu-to-edit, .outer-border, #pagechecklist-most-recent, .customize-pane-child { list-style-type: none; }
-.menu {padding:  0; background-color:  none!important;}
-#menu-to-edit.menu {
-    padding: 0;
-    margin: 0;
-    display:block;
-    background-color: #fff;}
-ul.vc_navbar-nav {list-style-type: none;}
