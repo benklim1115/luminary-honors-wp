@@ -22,13 +22,9 @@ get_header(); ?>
                         //if we are NOT home, render the layout for a base template page
                         else :
                             echo "
-                                <main class='grid-container'>
-                                    <div class='grid-x grid-margin-x margin-top-2 margin-bottom-2'>
-                                        <div class='cell small-12 medium-12'>
-                                            <h1 class='color'>";the_title();"</h1>
-                                        </div>
-                                    </div>
-                                </main>
+                                <div class='cell small-12 medium-12'>
+                                    <h1 class='color'>";the_title();"</h1>
+                                </div>
                             ";
                         endif;
                     ?>
@@ -41,7 +37,7 @@ get_header(); ?>
 		</div>
 	</div>
 	
-	<main class="grid-container">
+	<main id="main-content" class="grid-container">
         <?php the_content();?>
         <?php get_footer(); ?>
     </main>
