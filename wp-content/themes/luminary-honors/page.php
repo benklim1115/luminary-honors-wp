@@ -39,8 +39,9 @@ get_header(); ?>
 	
 	<main id="main-content" class="grid-container">
         <?php the_content();?>
-        <?php get_footer(); ?>
     </main>
+
+    <?php get_footer(); ?>    
 </div> <!--This is the ending div for the off-canvas div that starts in header.php -->
 
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
