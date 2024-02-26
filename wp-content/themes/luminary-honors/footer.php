@@ -5,7 +5,7 @@
 ?>
 
         <!--- Footer menu for site --->
-        <footer>
+        <footer style="background-color: #171717">
             <div class="grid-container">
                 <div class="grid-x grid-margin-x align-center-middle">
                     <div class="cell small-12 medium-4 small-order-3 medium-order-1">
