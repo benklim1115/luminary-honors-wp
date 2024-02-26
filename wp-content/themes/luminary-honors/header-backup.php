@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </header>
-                </div
+                </div>
                 ";
             endif;
         ?>
