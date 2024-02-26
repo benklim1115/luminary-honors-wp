@@ -30,13 +30,14 @@
                         <button class='close-button' aria-label='Close alert' type='button' data-close=''>
                             <span aria-hidden='true'>&times;</span>
                         </button>
-                    </div>
-                    <ul class='vertical menu align-left nav-text'>
-                        <li><a href='/luminary-honors/'>Home</a></li>
-                        <li><a href='/luminary-honors/sponsorships'>Sponsorships</a></li>
-                        <li><a href='/luminary-honors/honorees'>Honorees</a></li>
-                        <li><a href='/luminary-honors/rsvp'>RSVP</a></li>
-                    </ul>
+                    </div>";
+                    wp_nav_menu( array(
+                        'theme_location' => 'main-nav',
+                        'container' => 'ul',
+                        'menu_class'=> 'vertical menu align-left nav-text'
+                    ) );
+                echo
+                " 
                 </div>
                 <div class='off-canvas-content' data-off-canvas-content=''>
                     <header class='header'>
@@ -63,13 +64,14 @@
                         <button class='close-button' aria-label='Close alert' type='button' data-close=''>
                             <span aria-hidden='true'>&times;</span>
                         </button>
-                    </div>
-                    <ul class='vertical menu align-left nav-text'>
-                        <li><a href='/luminary-honors/'>Home</a></li>
-                        <li><a href='/luminary-honors/sponsorships'>Sponsorships</a></li>
-                        <li><a href='/luminary-honors/honorees'>Honorees</a></li>
-                        <li><a href='/luminary-honors/rsvp'>RSVP</a></li>
-                    </ul>
+                    </div>";
+                    wp_nav_menu( array(
+                        'theme_location' => 'main-nav',
+                        'container' => 'ul',
+                        'menu_class'=> 'vertical menu align-left nav-text'
+                    ) );
+                echo
+                "
                 </div>
                 <div class='off-canvas-content' data-off-canvas-content=''>
                     <header class='header'>
