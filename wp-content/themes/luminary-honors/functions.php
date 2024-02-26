@@ -145,7 +145,6 @@ function luminary_honors_public_scripts() {
 
     /***** Styles *****/
     wp_enqueue_style("main", get_template_directory_uri() . "/dist/assets/css/main.css", [], wp_rand(), "all");
-    wp_enqueue_style("overrides", get_template_directory_uri() . "/dist/assets/css/overrides.css", [], wp_rand(), 'all');
 
     /***** Scripts *****/
     wp_enqueue_script("main", get_template_directory_uri() . "/src/assets/js/main.js", [], wp_rand(), true);
