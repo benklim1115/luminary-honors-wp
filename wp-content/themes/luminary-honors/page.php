@@ -11,7 +11,7 @@
  */
 
 get_header(); ?>
-	<div class="page-title grid-container">
+	<main>
         <div class="grid-x grid-padding-x margin-top-2 margin-bottom-2">
             <div class="cell">
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -22,8 +22,10 @@ get_header(); ?>
                         //if we are NOT home, render the layout for a base template page
                         else :
                             echo "
-                                <div class='cell small-12 medium-12'>
-                                    <h1 class='color'>";the_title();"</h1>
+                                <div class='page-title grid-container'>
+                                    <div class='cell small-12 medium-12'>
+                                        <h1 class='color'>";the_title();"</h1>
+                                    </div>
                                 </div>
                             ";
                         endif;
@@ -35,14 +37,12 @@ get_header(); ?>
 				<?php endwhile; ?>
 			</div>
 		</div>
-	</div>
+	</main>
 	
 	<main id="main-content" class="grid-container">
         <?php the_content();?>
     </main>
 
-    <!--- if we move this footer outside of the div it messes up the home page --->
-    <!--- footer is not expanding though because it says its in the div.page-title.grid-container  --->
     <?php get_footer(); ?>    
 </div> <!--This is the ending div for the off-canvas div that starts in header.php -->
 
