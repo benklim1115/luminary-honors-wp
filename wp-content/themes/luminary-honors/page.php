@@ -41,6 +41,8 @@ get_header(); ?>
         <?php the_content();?>
     </main>
 
+    <!--- if we move this footer outside of the div it messes up the home page --->
+    <!--- footer is not expanding though because it says its in the div.page-title.grid-container  --->
     <?php get_footer(); ?>    
 </div> <!--This is the ending div for the off-canvas div that starts in header.php -->
 
