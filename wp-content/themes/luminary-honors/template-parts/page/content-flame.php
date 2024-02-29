@@ -118,10 +118,13 @@
         <div class="cell small-12 medium-7">
 
             <p class="invitation">
-                <i class="white">A memorable night under the stars on the grounds of the new UT Health San Antonio Multispecialty and Research Hospital.</i> <br />
-                We invite you to join us as we celebrate the luminaries who continue to light the way for UT Health San Antonio's unprecedented journey of discovery, transformation, and compassion.<br />
-                From Event and Healing Arts Sponsorships to legacy Naming Opportunities, learn more about how you can be part of this monumental event.<br />
-                luminaryhonors.uthscsa.edu or 210-567-1206
+                <i class="white">A memorable night under the stars on the grounds of the new UT Health San Antonio Multispecialty and Research Hospital.</i>
+            </p>
+            <p class="invitation">
+                We invite you to join us as we celebrate the luminaries who continue to light the way for UT Health San Antonio's unprecedented journey of discovery, transformation, and compassion.
+            </p>
+            <p class="invitation">
+                From Event and Healing Arts Sponsorships to legacy Naming Opportunities, learn more about how you can be part of this monumental event. <i class="white">210-567-1206</i>
             </p>
 
             <ul>
