@@ -117,18 +117,20 @@
         </div>
         <div class="cell small-12 medium-7">
 
-            <p class="invitation">Join us for a memorable evening honoring the contributions of <i class="white">Joe
-                    Long</i>, <i class="white">Margie & Bill Klesse</i>, and
-                the <i class="white">Mays Family Foundation</i> who are fostering the future of health care in San
-                Antonio.</p>
+            <p class="invitation">
+                <i class="white">A memorable night under the stars on the grounds of the new UT Health San Antonio Multispecialty and Research Hospital.</i> <br />
+                We invite you to join us as we celebrate the luminaries who continue to light the way for UT Health San Antonio's unprecedented journey of discovery, transformation, and compassion.<br />
+                From Event and Healing Arts Sponsorships to legacy Naming Opportunities, learn more about how you can be part of this monumental event.<br />
+                luminaryhonors.uthscsa.edu or 210-567-1206
+            </p>
 
             <ul>
-                <li>May 17, 2023 • 6:00-8:00 PM</li>
-                <li>Tobin Center for the Performing Arts</li>
-                <li>100 Auditorium Circle, San Antonio, TX 78205</li>
+                <li>October 4, 2024 • 6:00PM</li>
+                <li>UT Health San Antonio Multispecialty and Research Hospital</li>
+                <li>7703 Floyd Curl Drive San Antonio, Texas 78229-3900</li>
             </ul>
 
-            <p><a href="/luminary-honors/honorees" class="button">2023 Honorees</a></p>
+            <p><a href="/honorees" class="button">2024 Honorees</a></p>
 
 
         </div>

@@ -48,7 +48,7 @@
 					<?php
                         if(!is_front_page()){
                             echo " 
-                                <a href='/luminary-honors/'><img src='" . get_template_directory_uri() . "/src/assets/images/logo.svg' alt='Presidents Luminary Honors logo'></a>
+                                <a href='/'><img src='" . get_template_directory_uri() . "/src/assets/images/logo.svg' alt='Presidents Luminary Honors logo'></a>
                                 ";
                         }
 					?>
