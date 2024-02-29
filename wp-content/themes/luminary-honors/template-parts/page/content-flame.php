@@ -109,9 +109,9 @@
     <div class="grid-x grid-margin-x">
         <div class="cell small-12 medium-2 gold-border-right">
             <picture>
-                <source media="(max-width: 799px)" srcset="<?php echo get_template_directory_uri(); ?>/src/assets/images/date_horizontal.svg">
-                <source media="(min-width: 800px)" srcset="<?php echo get_template_directory_uri(); ?>/src/assets/images/date.svg">
-                <img class="flame-date" src="<?php echo get_template_directory_uri(); ?>/src/assets/images/date.svg">
+                <source media="(max-width: 799px)" srcset="<?php echo get_template_directory_uri(); ?>/src/assets/images/date_horizontal_new.svg">
+                <source media="(min-width: 800px)" srcset="<?php echo get_template_directory_uri(); ?>/src/assets/images/date_new.svg">
+                <img class="flame-date" src="<?php echo get_template_directory_uri(); ?>/src/assets/images/date_new.svg">
             </picture>
 
         </div>
