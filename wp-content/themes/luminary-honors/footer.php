@@ -18,7 +18,7 @@
                 </div>
                 <div class="cell small-12 medium-6 small-order-1 medium-order-2">
                     <ul class="arrow">
-                        <li><a href="">Register Online</a></li>
+                        <li><a href="https://makelivesbetter.uthscsa.edu/luminaryhonors">Register Online</a></li>
                         <li><a href="https://uthscsa.edu/">UT Health San Antonio</a></li>
                         <li><a href="https://uthealthsahospital.org">UT Health San Antonio Multispecialty &amp; Research Hospital</a></li>
                     </ul>
