@@ -133,7 +133,7 @@
                 <li>7703 Floyd Curl Drive San Antonio, Texas 78229-3900</li>
             </ul>
 
-            <p><a href="/honorees" class="button">2024 Honorees</a></p>
+            <p><a href="/honorees" class="button">2023 Honorees</a></p>
 
 
         </div>
