@@ -1,5 +1,5 @@
 # luminary-honors-wp
-President's Luminary Honors wordpress site
+President's Luminary Honors wordpress site.
 Design setup from luminary-honors repo:
 https://github.com/Web-Digital-Services/luminary-honors/blob/main/README.md
 
