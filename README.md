@@ -1,11 +1,9 @@
 # luminary-honors-wp
-
 President's Luminary Honors wordpress site
 Design setup from luminary-honors repo:
 https://github.com/Web-Digital-Services/luminary-honors/blob/main/README.md
 
-# President's Luminary Honors 2024, also referred to in code as "luminary-honors"
-
+## President's Luminary Honors 2024, also referred to in code as "luminary-honors"
 luminary-honors is a custom WordPress theme designed for the President's Luminary Honors event. This year, the event is for the UT Health San Antonio Multispecialty and Research Hospital. It features a landing page created with JavaScript, jQuery and foundation.js, scales to mobile, tablet and desktop screen sizes and allows for the manipulation/creation of web pages through the use of WP Bakery.
 
 --------------------------------------------------------------------------------------------------------------
@@ -29,7 +27,6 @@ luminary-honors is a custom WordPress theme designed for the President's Luminar
 
 ## Customization
 This theme includes a theme options panel under Appearance > Customize in the WordPress dashboard, allowing you to:
-
 - Change the styling through the Additional CSS (Preferred for quick fixes)
 - Change the site logo
 - Customize the color scheme
@@ -39,7 +36,6 @@ This theme includes a theme options panel under Appearance > Customize in the Wo
 
 ## Page Templates
 luminary-honors comes with several custom page templates including:
-
 - **Landing Page** themes/luminary-honors/template-parts/page/content-flame.php - How we render the landing page
 - **Page** themes/luminary-honors/page.php - the main layout file to create new pages within our theme
 - **Custom Post Types** themes/luminary-honors/template-parts/post - setup for custom post types for future utilization
@@ -52,11 +48,8 @@ No widgets are being used at the moment, were we to need social media links we c
 
 ## Documentation/Things to know
 For the easiest way to use this theme follow the **Installation on WordPress** option above. If alterations are needed you can download it locally and make your changes then reupload the changes following that installation.
-
 **One thing to keep in mind** - The JavaScript on this theme is dependent on some of the node modules being compiled, as well as compiling all our SCSS into CSS. 
-
 Get the node modules by messaging Ben Klimchock at klimchock@uthscsa.edu
-
 Once you have all the necessary node modules installed to the correct directory, themes/luminary-honors/node_modules run this command -> npm run compile-css
 
 ## Support
