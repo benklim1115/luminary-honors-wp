@@ -36,11 +36,11 @@ This theme includes a theme options panel under Appearance > Customize in the Wo
 
 ## Page Templates
 luminary-honors comes with several custom page templates including:
-- **Landing Page** themes/luminary-honors/template-parts/page/content-flame.php - How we render the landing page
-- **Page** themes/luminary-honors/page.php - the main layout file to create new pages within our theme
-- **Custom Post Types** themes/luminary-honors/template-parts/post - setup for custom post types for future utilization
-- **Single** themes/luminary-honors/single.php - can be customized to display single post, can be utilized with archive to create collection of posts
-- **Search** themes/luminary-honors/template-parts/page/content-search.php - can be used to create search functionality
+- **Landing Page:** themes/luminary-honors/template-parts/page/content-flame.php - How we render the landing page
+- **Page:** themes/luminary-honors/page.php - the main layout file to create new pages within our theme
+- **Custom Post Types:** themes/luminary-honors/template-parts/post - setup for custom post types for future utilization
+- **Single:** themes/luminary-honors/single.php - can be customized to display single post, can be utilized with archive to create collection of posts
+- **Search:** themes/luminary-honors/template-parts/page/content-search.php - can be used to create search functionality
 - **More to come**  
 
 ## Widgets
