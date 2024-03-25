@@ -183,6 +183,64 @@ h1 {
     font-style: normal;
 }
 
+.date-gold {
+
+    text-align: center;
+
+    &.horizontal {
+        ul li {
+            margin-right: 1.5rem;
+            display: inline-block;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    ul li {
+
+        color: $gold;
+        margin-bottom: -1.5rem;
+    }
+
+    ul li:nth-child(odd) {
+        font-size: 120px;
+        font-weight: lighter;
+
+        /*---- MEDIUM or TABLET----*/
+        @media screen and (max-width: $medium-screen) {
+            font-size: 28px;
+        }
+
+        /*---- SMALL or MOBILE----*/
+        @media screen and (max-width: $small-screen) {
+            font-size: 22px;
+        }
+    }
+
+    ul li:nth-child(even):after {
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 900;
+        font-size: .5rem;
+        content: "\f111";
+
+        /*---- MEDIUM or TABLET----*/
+        @media screen and (max-width: $medium-screen) {
+            font-size: 28px;
+        }
+
+        /*---- SMALL or MOBILE----*/
+        @media screen and (max-width: $small-screen) {
+            font-size: 22px;
+        }
+    }
+
+
+
+}
+
 // Link Styles
 
 a {

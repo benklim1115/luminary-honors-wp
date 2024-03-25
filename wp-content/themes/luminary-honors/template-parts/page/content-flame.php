@@ -107,13 +107,14 @@
 
 <div class="grid-container margin-bottom-4">
     <div class="grid-x grid-margin-x">
-        <div class="cell small-12 medium-2 gold-border-right">
-            <picture>
-                <source media="(max-width: 799px)" srcset="<?php echo get_template_directory_uri(); ?>/src/assets/images/date_horizontal_new.svg">
-                <source media="(min-width: 800px)" srcset="<?php echo get_template_directory_uri(); ?>/src/assets/images/date_new.svg">
-                <img class="flame-date" src="<?php echo get_template_directory_uri(); ?>/src/assets/images/date_new.svg">
-            </picture>
-
+        <div class="cell small-12 medium-2 date-gold gold-border-right">
+            <ul>
+                <li>10</li>
+                <li></li>
+                <li>04</li>
+                <li></li>
+                <li>24</li>
+            </ul>
         </div>
         <div class="cell small-12 medium-7">
 
