@@ -18043,25 +18043,6 @@ h1 {
     font-size: 22px;
   }
 }
-.date-gold ul li:nth-child(even):after {
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 0.5rem;
-  content: "\f111";
-  /*---- MEDIUM or TABLET----*/
-  /*---- SMALL or MOBILE----*/
-}
-@media screen and (max-width: 1024px) {
-  .date-gold ul li:nth-child(even):after {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 639px) {
-  .date-gold ul li:nth-child(even):after {
-    font-size: 22px;
-  }
-}
 
 a {
   color: #27829E;

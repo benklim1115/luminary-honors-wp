@@ -219,26 +219,6 @@ h1 {
         }
     }
 
-    ul li:nth-child(even):after {
-        font-family: "Font Awesome 5 Free";
-        font-style: normal;
-        font-weight: 900;
-        font-size: .5rem;
-        content: "\f111";
-
-        /*---- MEDIUM or TABLET----*/
-        @media screen and (max-width: $medium-screen) {
-            font-size: 28px;
-        }
-
-        /*---- SMALL or MOBILE----*/
-        @media screen and (max-width: $small-screen) {
-            font-size: 22px;
-        }
-    }
-
-
-
 }
 
 // Link Styles
