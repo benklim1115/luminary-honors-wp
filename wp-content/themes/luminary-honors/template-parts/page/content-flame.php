@@ -110,9 +110,9 @@
         <div class="cell small-12 medium-2 date-gold gold-border-right">
             <ul id="the-Date">
                 <li>10</li>
-                <li></li>
+                <li>-</li>
                 <li>04</li>
-                <li></li>
+                <li>-</li>
                 <li>24</li>
             </ul>
         </div>
